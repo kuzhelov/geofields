@@ -4,14 +4,21 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
+
 $(function() {
+	// jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
+    });
+
+    // Adjust carousel's image height according to the height of entire viewport
+	$('.carousel-inner  .carousel-image').css("max-height", $(window).height());
+    $(window).resize(function() {
+    	$('.carousel-inner .carousel-image').css("max-height", $(window).height());
     });
 });
 
