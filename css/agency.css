@@ -866,6 +866,13 @@ body {
 }
 
 /* Garbage starts here */
+
+/* this should prevent navbar blinking on Chrome */
+.navbar-fixed-top, 
+.navbar-fixed-bottom {
+    -webkit-transform: translateZ(0);
+}
+
 .carousel-caption {
     bottom: 15%;
 }
