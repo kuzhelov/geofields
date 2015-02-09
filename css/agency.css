@@ -3,23 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
-/* Garbage starts here */
-.carousel-caption {
-    bottom: 15%;
-}
-
-@media screen and (min-width: 768px) {
-    .carousel-indicators {
-        bottom: 30px;
-    }
-}
-
-.carousel-inner  .carousel-image {
-	min-width: 100%;
-}
-/* End of Garbage */
-
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -881,3 +864,30 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+/* Garbage starts here */
+.carousel-caption {
+    bottom: 15%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 30px;
+    }
+}
+
+.carousel-inner  .carousel-image {
+    min-width: 100%;    /* for large screens */
+}
+
+.carousel-inner>.item>img {
+    max-width: none;    /* for mobile screens */
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+/* End of Garbage */
