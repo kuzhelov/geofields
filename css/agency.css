@@ -898,8 +898,45 @@ body {
     }
 }
 
-.service-row:not(:last-child) {
-    margin-bottom: 75px; 
+/* in order to establish proper responsive padding scheme 
+for service items */ 
+    @media (min-width: 992px) {
+        .service-row:not(:last-child) {
+            margin-bottom: 75px; 
+        }
+    }
+
+    @media (max-width: 991px) {
+        .service:not(.service-last) {
+            margin-bottom: 75px;
+        }
+    }
+/* ---------- */
+
+/* following two lines would garantee that only area above
+the header but not aside of it will be responsive for hyperlinking */
+    .service-row .fa-stack {
+        width: 100%;
+    }
+    
+    .service-row h4 {
+        display: inline-block;
+    }
+/* -------- */
+
+.service-row a {
+    color: black;
+    text-decoration: none;
+}
+
+.service-row a:hover,
+.service-row a:focus {
+    color: #fed136;
+}
+
+.service-row a:hover i.fa-circle,
+.service-row a:focus i.fa-circle {
+    color: #fed136;
 }
 
 h4.service-heading {
