@@ -898,6 +898,18 @@ body {
     }
 }
 
+.service-row:not(:last-child) {
+    margin-bottom: 75px; 
+}
+
+h4.service-heading {
+    line-height: 1.5;
+}
+
+section.pre-footer {
+    padding-bottom: 50px;
+}
+
 /* from http://getbootstrap.com/customize/ */
 .text-xs-left { text-align: left; }
 .text-xs-right { text-align: right; }
