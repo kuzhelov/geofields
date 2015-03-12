@@ -867,6 +867,10 @@ body {
 
 /* Garbage starts here */
 
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-xs-max: (@screen-sm-min - 1);
+
 /* this should prevent navbar blinking on Chrome */
 .navbar-fixed-top, 
 .navbar-fixed-bottom {
@@ -889,6 +893,63 @@ body {
 
 .carousel-inner>.item>img {
     max-width: none;    /* for mobile screens */
+}
+
+@base-item-margin-bottom: 100px;
+.base-item {
+    margin-bottom: @base-item-margin-bottom;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+@base-item-heading-margin-top-xs: 30px;
+@base-item-heading-margin-bottom-xs: @base-item-heading-margin-top-xs;
+@base-item-heading-margin-top: 0px;
+.base-item-heading {
+    .service-heading;
+
+    margin-top: @base-item-heading-margin-top;
+
+    @media screen and (max-width: @screen-xs-max) {
+        margin-top: @base-item-heading-margin-top-xs;
+        margin-bottom: @base-item-heading-margin-bottom-xs;
+    }
+}
+
+.base-item-description {
+    .text-muted;
+}
+
+.project-item {
+    .base-item;
+}
+
+.project-heading {
+    .base-item-heading;
+}
+
+.project-description {
+    .base-item-description;
+}
+
+@media screen and (max-width: 767px) {
+    .project-heading,
+    .project-description {
+        text-align: center;
+    }
+
+    .project-heading {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project-heading {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
