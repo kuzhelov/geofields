@@ -752,7 +752,7 @@ body {
   /* for mobile screens */
 }
 .base-item {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .base-item:last-child {
   margin-bottom: 0px;
@@ -771,15 +771,15 @@ body {
 }
 @media screen and (max-width: 767px) {
   .base-item-heading {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .base-item-description {
   color: #777;
 }
 .project-item {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .project-item:last-child {
   margin-bottom: 0px;
@@ -798,8 +798,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .project-heading {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .project-description {
