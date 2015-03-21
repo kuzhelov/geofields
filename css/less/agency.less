@@ -867,9 +867,15 @@ body {
 
 /* Garbage starts here */
 
-@screen-sm: 768px;
-@screen-sm-min: @screen-sm;
+@screen-xs: 480px;
 @screen-xs-max: (@screen-sm-min - 1);
+
+@screen-sm-min: @screen-sm;
+@screen-sm: 768px;
+@screen-sm-max: (@screen-md-min - 1);
+
+@screen-md-min: @screen-md;
+@screen-md: 992px;
 
 /* this should prevent navbar blinking on Chrome */
 .navbar-fixed-top, 
@@ -902,14 +908,6 @@ body {
     &:last-child {
         margin-bottom: 0px;
     }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        min-height: 70px;
-        min-width: 100px;
-        max-height: 150px;
-    }
 }
 
 @base-item-heading-margin-top-xs: 20px;
@@ -934,6 +932,46 @@ body {
     .base-item;
 }
 
+.project-logo {
+    .xs-project-logo {
+
+        /* hide block for larger resolutions */
+        display: none;
+
+        margin: 0 auto;
+        height: 85px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media screen {
+            @media (max-width: @screen-xs-max) {
+                display: block;
+                width: 80%;
+            }
+
+            @media (max-width: @screen-xs) {
+                width: 100%
+            }
+        }
+    }
+
+    img.sm-project-logo {
+
+        /* hide for small display sizes */
+        @media screen and (max-width: (@screen-sm-min - 1)) {
+            display: none;
+        }
+        
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 60px;
+        min-width: 75px;
+        max-height: 110px;     
+    }
+}
+
 .project-heading {
     .base-item-heading;
 }
@@ -942,33 +980,49 @@ body {
     .base-item-description;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: @screen-xs-max) {
     .project-heading,
     .project-description {
-        text-align: center;
+        text-align: left;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: @screen-xs) {
     h1 {
         font-size: 28px;
         font-weight: 400;
     }
 }
 
+.service {
+    @media screen{
+
+        @media (max-width: @screen-sm-max) {
+            max-width: 60%;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: @screen-xs-max) {
+            max-width: 80%;
+        }
+    }
+}
+
 /* in order to establish proper responsive padding scheme 
 for service items */ 
-    @media (min-width: 992px) {
-        .service-row:not(:last-child) {
-            margin-bottom: 75px; 
-        }
+@media (min-width: @screen-md-min) {
+    .service-row:not(:last-child) {
+        margin-bottom: 75px; 
     }
+}
 
-    @media (max-width: 991px) {
-        .service:not(.service-last) {
-            margin-bottom: 75px;
-        }
+@media (max-width: @screen-sm-max) {
+    .service:not(.service-last) {
+        margin-bottom: 75px;
     }
+}
 /* ---------- */
 
 /* following two lines would garantee that only area above

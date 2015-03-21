@@ -757,13 +757,6 @@ body {
 .base-item:last-child {
   margin-bottom: 0px;
 }
-.base-item img {
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 70px;
-  min-width: 100px;
-  max-height: 150px;
-}
 .base-item-heading {
   margin: 15px 0;
   text-transform: none;
@@ -784,12 +777,38 @@ body {
 .project-item:last-child {
   margin-bottom: 0px;
 }
-.project-item img {
+.project-logo .xs-project-logo {
+  /* hide block for larger resolutions */
+  display: none;
+  margin: 0 auto;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 767px) {
+  .project-logo .xs-project-logo {
+    display: block;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-logo .xs-project-logo {
+    width: 100%;
+  }
+}
+.project-logo img.sm-project-logo {
+  /* hide for small display sizes */
   margin-left: auto;
   margin-right: auto;
-  min-height: 70px;
-  min-width: 100px;
-  max-height: 150px;
+  min-height: 60px;
+  min-width: 75px;
+  max-height: 110px;
+}
+@media screen and (max-width: 767px) {
+  .project-logo img.sm-project-logo {
+    display: none;
+  }
 }
 .project-heading {
   margin: 15px 0;
@@ -808,13 +827,25 @@ body {
 @media screen and (max-width: 767px) {
   .project-heading,
   .project-description {
-    text-align: center;
+    text-align: left;
   }
 }
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 28px;
     font-weight: 400;
+  }
+}
+@media screen and (max-width: 991px) {
+  .service {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service {
+    max-width: 80%;
   }
 }
 /* in order to establish proper responsive padding scheme 
