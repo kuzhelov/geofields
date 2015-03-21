@@ -464,4 +464,4 @@
 }).call(this);
 
 new WOW().init(window.document);
-new WOW().init(window.document.getElementById('test-modal'))
+// new WOW().init(window.document.getElementById('service-mining'));

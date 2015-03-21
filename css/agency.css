@@ -886,20 +886,20 @@ section.pre-footer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.modal .modal-body .body-elements-root .service-feature .check-sign {
+.modal .modal-body .body-elements-root .service-method .check-sign {
   float: left;
   width: 40px;
   text-align: right;
   margin: 10px;
 }
-.modal .modal-body .body-elements-root .service-feature .check-sign i {
+.modal .modal-body .body-elements-root .service-method .check-sign i {
   font-size: 32px;
   color: #0DA50D;
 }
-.modal .modal-body .body-elements-root .service-feature .description {
+.modal .modal-body .body-elements-root .service-method .description {
   margin-left: 80px;
 }
-.modal .modal-body .body-elements-root .service-feature .description h4 {
+.modal .modal-body .body-elements-root .service-method .description h4 {
   text-transform: none;
 }
 .modal .modal-body .body-elements-root .bottom-close {

@@ -159,15 +159,18 @@
                 </div>
                 <div class="row service-row text-center">
                     <div class="col-md-4 service">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Oil</h4>
+                        <a href="#service-oil" data-toggle="modal">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
+                            </span>
+                        
+                            <h4 class="service-heading">Oil</h4>
+                        </a>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4 service">
-                        <a href="#test-modal" data-toggle="modal">
+                        <a href="#service-mining" data-toggle="modal">
                             <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                                 <i class="fa fa-diamond fa-stack-1x fa-inverse"></i>
@@ -178,29 +181,37 @@
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime   quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4 service">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-cube fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Coal</h4>
+                        <a href="#service-coal" data-toggle="modal">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-cube fa-stack-1x fa-inverse"></i>
+                            </span>
+
+                            <h4 class="service-heading">Coal</h4>
+                        </a>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
                 <div class="row service-row text-center">
                     <div class="col-md-4 col-md-offset-2 service">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Geothermal and Groundwater</h4>
+                        <a href="#service-groundwater" data-toggle="modal">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-fire fa-stack-1x fa-inverse"></i>
+                            </span>
+
+                            <h4 class="service-heading">Geothermal and Groundwater</h4>
+                        </a>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4 service service-last">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-male fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Civil Works</h4>
+                        <a href="#service-civil" data-toggle="modal">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-male fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Civil Works</h4>
+                        </a>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                 </div>
@@ -495,12 +506,65 @@
             </div>
         </footer>
 
+
+        <!-- Service modals -->
+
         <!-- modal scroll accelerator -->
         <div id="modal-scroll-accelerator" style="position: fixed;">
         </div><!-- /.modal scroll accelerator  -->
 
-        <!-- modal test -->
-        <div id="test-modal" class="modal fade" role="dialog" aria-hidden="true">
+        <!-- oil service modal -->
+        <div id="service-oil" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h2 class="modal-title">Oil</h2>
+                        <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="body-elements-root col-xs-10 col-xs-offset-1">
+                                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                                <img class="img-responsive img-centered" src="img/services/oil.jpg" alt="">
+                                <p>Geofields, offers its customers of the oil industry, tools that enable them to improve the image of its exploration prospects, conduct regional surveys at reasonable cost and decrease the risk in the prospects located in areas of complex tectonics.</p>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Magnetotelluric Exploration</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>3D seismic data processing</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Seismic Interpretation</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="bottom-close btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- mining service modal -->
+        <div id="service-mining" class="modal fade" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -514,7 +578,7 @@
                                 <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
                                 <img class="img-responsive img-centered" src="img/services/mining.jpg" alt="">
                                 <p>Geofields supports its clients in achieving their exploratory objectives, Geofields has reliable geophysical methods of exploration, experience in mining and oil industries, producing high quality products within the according timeframe and at competitive prices.</p>
-                                <div class="service-feature wow fadeInDown">
+                                <div class="service-method fadeInDown animated">
                                     <div class="check-sign">
                                         <i class="fa fa-check"></i>
                                     </div>
@@ -523,7 +587,7 @@
                                         <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
                                     </div>
                                 </div>
-                                <div class="service-feature wow fadeInDown">
+                                <div class="service-method fadeInDown animated">
                                     <div class="check-sign">
                                         <i class="fa fa-check"></i>
                                     </div>
@@ -532,7 +596,139 @@
                                         <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
                                     </div>
                                 </div>
-                                <div class="service-feature wow fadeInDown">
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Magnetotelluric studies</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="bottom-close btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+         <!-- coal service modal -->
+        <div id="service-coal" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h2 class="modal-title">Coal</h2>
+                        <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="body-elements-root col-xs-10 col-xs-offset-1">
+                                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                                <img class="img-responsive img-centered" src="img/services/coal.jpg" alt="">
+                                <p>Geofields, thinking about its customers of the coal industry, has designed some solutions ranging from conventional geophysical methods to more sophisticated methods.</p>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Electrical Tomography</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Vertical Electrical Sounding</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="bottom-close btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+           <!-- groundwater service modal -->
+        <div id="service-groundwater" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h2 class="modal-title">Geothermal and Ground Waters Exploration</h2>
+                        <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="body-elements-root col-xs-10 col-xs-offset-1">
+                                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                                <img class="img-responsive img-centered" src="img/services/groundwater.png" alt="">
+                                <p>Growing concerns about climate change seen in clean alternative energy is an option to reduce the emission of polluting gases into the atmosphere. The power generation from geothermal sources is a practical alternative to being friendly to the environment because it does not affect the ecosystem by not having to inundate large areas for energy generation. Colombia has great potential for research in this area. Geofields with Magnetotelluric method provides an important tool for locating geothermal sources capable of moving with the aid of steam turbines and generate clean energy.</p>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Deep Magnetotelluric Sounding</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Audio Magnetotelluric Sounding</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="bottom-close btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- civil service modal -->
+        <div id="service-civil" class="modal fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h2 class="modal-title">Civil Works</h2>
+                        <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="body-elements-root col-xs-10 col-xs-offset-1">
+                                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                                <img class="img-responsive img-centered" src="img/services/civil.jpg" alt="">
+                                <p>Geofields provides high quality specialized geophysical services for engineering studies to support engineering in the construction of hydroelectric dams, bridges, tunnels and major works. Geofields's commitment is to advise and accompany their clients in selecting the most appropriate to their exploration needs method. That's why we offer to our customers a range of geophysical methods that will help them gain a better understanding about the properties of the subsoil as a basis for its engineering projects.</p>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Seismic Refraction</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>
+                                <div class="service-method fadeInDown animated">
+                                    <div class="check-sign">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Electrical prospecting methods</h4>
+                                        <p>Vivamus a dictum nisi. Fusce sed dignissim quam, vel ultricies augue. Vivamus tempor, eros non posuere convallis, odio felis accumsan nunc, in commodo est arcu vitae magna</p>
+                                    </div>
+                                </div>      
+                                <div class="service-method fadeInDown animated">
                                     <div class="check-sign">
                                         <i class="fa fa-check"></i>
                                     </div>
