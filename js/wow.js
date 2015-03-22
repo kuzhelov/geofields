@@ -106,7 +106,7 @@
 
   })());
 
-  getComputedStyle = this.getComputedStyle || function(el, pseudo) {
+  getComputedStyle = this.getComputedStyle || function(el) {
     this.getPropertyValue = function(prop) {
       var _ref;
       if (prop === 'float') {
@@ -236,7 +236,7 @@
       }
     };
 
-    WOW.prototype.sync = function(element) {
+    WOW.prototype.sync = function() {
       if (MutationObserver.notSupported) {
         return this.doSync(this.element);
       }
