@@ -26,6 +26,16 @@
 							name: "Seismic Interpretation",
 							description: commonMethodDescription
 						}
+					],
+					tasks: [
+						{
+							name: "Reservoir monitoring",
+							description: commonMethodDescription
+						},
+						{
+							name: "Exploration of complex tectonics areas",
+							description: commonMethodDescription
+						}
 					]
 				},
 				{
@@ -48,6 +58,20 @@
 							name: "Magnetotelluric studies",
 							description: commonMethodDescription
 						}
+					],
+					tasks: [
+						{
+							name: "Exploration of precious minerals",
+							description: commonMethodDescription
+						},
+						{
+							name: "Exploration of coal deposits",
+							description: commonMethodDescription
+						},
+						{
+							name: "Exploration of construction materials",
+							description: commonMethodDescription
+						}
 					]
 				},
 				{
@@ -66,6 +90,16 @@
 							name: "Vertical Electrical Sounding",
 							description: commonMethodDescription
 						}
+					],
+					tasks: [
+						{
+							name: "Exploration of coal deposits",
+							description: commonMethodDescription
+						},
+						{
+							name: "Coal beds tracking",
+							description: commonMethodDescription
+						}
 					]
 				},
 				{
@@ -82,6 +116,16 @@
 						},
 						{
 							name: "Audio Magnetotelluric Sounding",
+							description: commonMethodDescription
+						}
+					],
+					tasks: [
+						{
+							name: "Aquifers detection",
+							description: commonMethodDescription 
+						},
+						{
+							name: "Deep geothermal sources detection",
 							description: commonMethodDescription
 						}
 					]
@@ -104,6 +148,16 @@
 						},
 						{
 							name: "Magnetotelluric studies",
+							description: commonMethodDescription
+						}
+					],
+					tasks: [
+						{
+							name: "Engineering and Construction support",
+							description: commonMethodDescription
+						},
+						{
+							name: "Subsoil properties investigation",
 							description: commonMethodDescription
 						}
 					]

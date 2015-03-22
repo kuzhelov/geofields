@@ -52,7 +52,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .img-centered {
@@ -1064,9 +1064,20 @@ section.pre-footer {
     color: #0DA50D;
 } */
 
+@modal-max-width: 700px;
 .modal {
+
+    @media (min-width: @screen-sm-min) {
+        .modal-dialog {
+            width: @modal-max-width;
+        }
+    }
+
     .modal-header {
+        color: #fff;
+        background-color: #097509;
         text-align: center;
+        border-bottom: 2px solid #333;
 
         .close-modal {
             line-height: 1;
@@ -1087,6 +1098,17 @@ section.pre-footer {
         
         p {
             text-align: justify;
+
+            &.drop-cap::first-letter {
+                float: left; 
+                color: #097509; 
+                font-size: 40px; 
+                line-height: 30px; 
+                padding-top: 8px; 
+                padding-right: 16px; 
+                padding-left: 3px; 
+                font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+            }
         }
 
         .body-elements-root {
@@ -1096,6 +1118,10 @@ section.pre-footer {
                 margin-bottom: 0;
                 padding-top: 15px;
                 padding-bottom: 15px;
+            }
+
+            .modal-body-subheader {
+                border-bottom: 1px solid #aaa;
             }
 
             .service-method {

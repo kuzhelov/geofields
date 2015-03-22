@@ -44,7 +44,7 @@ h5,
 h6 {
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 .img-centered {
   margin: 0 auto;
@@ -892,8 +892,16 @@ section.pre-footer {
     background-color: black;
     color: #0DA50D;
 } */
+@media (min-width: 768px) {
+  .modal .modal-dialog {
+    width: 700px;
+  }
+}
 .modal .modal-header {
+  color: #fff;
+  background-color: #097509;
   text-align: center;
+  border-bottom: 2px solid #333;
 }
 .modal .modal-header .close-modal {
   line-height: 1;
@@ -911,11 +919,24 @@ section.pre-footer {
 .modal .modal-body p {
   text-align: justify;
 }
+.modal .modal-body p.drop-cap::first-letter {
+  float: left;
+  color: #097509;
+  font-size: 40px;
+  line-height: 30px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-left: 3px;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
 .modal .modal-body .body-elements-root > * {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.modal .modal-body .body-elements-root .modal-body-subheader {
+  border-bottom: 1px solid #aaa;
 }
 .modal .modal-body .body-elements-root .service-method .check-sign {
   float: left;
