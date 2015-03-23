@@ -1,0 +1,27 @@
+{
+  "name": "geofields",
+  "version": "1.0.0",
+  "description": "Prototype for Geofields website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuzhelov/geofields.git"
+  },
+  "keywords": [
+    "geofields",
+    "columbia"
+  ],
+  "author": "Kuzhelov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuzhelov/geofields/issues"
+  },
+  "homepage": "https://github.com/kuzhelov/geofields",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
