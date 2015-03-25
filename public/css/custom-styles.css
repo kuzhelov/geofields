@@ -729,3 +729,374 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+/* this should prevent navbar blinking on Chrome */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  -webkit-transform: translateZ(0);
+}
+/* .carousel-caption {
+    bottom: 15%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 30px;
+    }
+}
+
+.carousel-inner  .carousel-image {
+    min-width: 100%;    
+}
+*/
+#header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#header #header-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#header .drop-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#header #header-content {
+  position: relative;
+  /* padding: 40% 0 30px 0; */
+  margin: 0 5%;
+  width: 90%;
+  height: 100%;
+  /* border: 2px solid white; */
+}
+#header #header-content #carousel-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: auto !important;
+}
+#header #header-content #carousel-wrapper #about-carousel {
+  height: 100%;
+  /* border: 1px solid red; */
+  /* should be deleted */
+  /* should be visible for larger screens */
+  /* background: url(../img/mobile_section_divider.png) no-repeat center bottom;
+	            background-size: 25% auto; */
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner {
+  /* border: 2px solid blue; */
+  /* should be deleted */
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item {
+  margin-left: 7%;
+  margin-right: 7%;
+  width: 86%;
+  height: 100%;
+  text-align: center;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content {
+  height: 100%;
+  /* border: 1px solid white; */
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content h2 {
+  text-transform: none;
+  margin-bottom: 15px;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.2;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn {
+  margin-top: 15px;
+  border-radius: 0;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-sm {
+  font-size: 0.73em;
+  padding: 10px 26px;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse {
+  color: white;
+  background-color: transparent;
+  border-color: #fff;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse:hover {
+  color: #333;
+  background-color: #fff;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .carousel-control {
+  background: transparent;
+  width: 7%;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .carousel-control .glyphicon {
+  position: absolute;
+  top: 30px;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .carousel-control:hover {
+  width: 5%;
+  opacity: 1;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .carousel-control.left.glyphicon {
+  left: 0;
+}
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .carousel-control.right.glyphicon {
+  right: 0;
+}
+.base-item {
+  margin-bottom: 50px;
+}
+.base-item:last-child {
+  margin-bottom: 0px;
+}
+.base-item-heading {
+  margin: 15px 0;
+  text-transform: none;
+  margin-top: 0px;
+}
+@media screen and (max-width: 767px) {
+  .base-item-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.base-item-description {
+  color: #777;
+}
+.project-item {
+  margin-bottom: 50px;
+}
+.project-item:last-child {
+  margin-bottom: 0px;
+}
+.project-logo .xs-project-logo {
+  /* hide block for larger resolutions */
+  display: none;
+  margin: 0 auto;
+  height: 85px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 767px) {
+  .project-logo .xs-project-logo {
+    display: block;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-logo .xs-project-logo {
+    width: 100%;
+  }
+}
+.project-logo img.sm-project-logo {
+  /* hide for small display sizes */
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 60px;
+  min-width: 75px;
+  max-height: 110px;
+}
+@media screen and (max-width: 767px) {
+  .project-logo img.sm-project-logo {
+    display: none;
+  }
+}
+.project-heading {
+  margin: 15px 0;
+  text-transform: none;
+  margin-top: 0px;
+}
+@media screen and (max-width: 767px) {
+  .project-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.project-description {
+  color: #777;
+}
+@media screen and (max-width: 767px) {
+  .project-heading,
+  .project-description {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 991px) {
+  .service {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .service {
+    max-width: 80%;
+  }
+}
+/* in order to establish proper responsive padding scheme 
+for service items */
+@media (min-width: 992px) {
+  .service-row:not(:last-child) {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 991px) {
+  .service:not(.service-last) {
+    margin-bottom: 75px;
+  }
+}
+/* ---------- */
+/* following two lines would garantee that only area above
+the header but not aside of it will be responsive for hyperlinking */
+.service-row .fa-stack {
+  width: 100%;
+}
+.service-row h4 {
+  display: inline-block;
+}
+/* -------- */
+.service-row a {
+  color: black;
+  text-decoration: none;
+}
+.service-row a:hover,
+.service-row a:focus {
+  color: #fed136;
+}
+.service-row a:hover i.fa-circle,
+.service-row a:focus i.fa-circle {
+  color: #fed136;
+}
+h4.service-heading {
+  line-height: 1.5;
+}
+section.pre-footer {
+  padding-bottom: 50px;
+}
+/* .modal-header {
+    background-color: black;
+    color: #0DA50D;
+} */
+@media (min-width: 768px) {
+  .modal .modal-dialog {
+    width: 700px;
+  }
+}
+.modal .modal-header {
+  color: #fff;
+  background-color: #097509;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+.modal .modal-header .close-modal {
+  line-height: 1;
+  padding: 0;
+  float: right;
+  background-color: initial;
+  border: none;
+  color: #E5E5E5;
+  font-size: 30px;
+}
+.modal .modal-header .close-modal:hover,
+.modal .modal-header .close-modal:focus {
+  color: #FED136;
+}
+.modal .modal-body p {
+  text-align: justify;
+}
+.modal .modal-body p.drop-cap::first-letter {
+  float: left;
+  color: #097509;
+  font-size: 40px;
+  line-height: 30px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-left: 3px;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.modal .modal-body .body-elements-root > * {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.modal .modal-body .body-elements-root .modal-body-subheader {
+  border-bottom: 1px solid #aaa;
+}
+.modal .modal-body .body-elements-root .service-method .check-sign {
+  float: left;
+  width: 40px;
+  text-align: right;
+  margin: 10px;
+}
+.modal .modal-body .body-elements-root .service-method .check-sign i {
+  font-size: 32px;
+  color: #0DA50D;
+}
+.modal .modal-body .body-elements-root .service-method .description {
+  margin-left: 80px;
+}
+.modal .modal-body .body-elements-root .service-method .description h4 {
+  text-transform: none;
+}
+.modal .modal-body .body-elements-root .bottom-close {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body {
+  position: relative;
+}
+/* from http://getbootstrap.com/customize/ */
+.text-xs-left {
+  text-align: left;
+}
+.text-xs-right {
+  text-align: right;
+}
+.text-xs-center {
+  text-align: center;
+}
+.text-xs-justify {
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .text-sm-left {
+    text-align: left;
+  }
+  .text-sm-right {
+    text-align: right;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+  .text-sm-justify {
+    text-align: justify;
+  }
+}

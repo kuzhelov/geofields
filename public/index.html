@@ -24,7 +24,7 @@
         <link href="css/animate.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="css/agency.css" rel="stylesheet">
+        <link href="css/custom-styles.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
         <!--link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
@@ -87,36 +87,38 @@
         </nav>
 
         <!-- Header -->
+        
         <header id="header">
             <img id="header-image" src="img/header-farm-ex.jpg" alt="farm">
             <div class="drop-shadow"></div>
             <div id="header-content">
 
-                <div style="position: absolute; width: 100%; height: auto !important; padding-bottom: 0; padding-top: 0; margin-left: 0; border: 1px solid white;">
+                <!-- http://wrapbootstrap.com/preview/WB0196957 -->
+                <div id="carousel-wrapper">
                 <!-- reflects the state of #features-carousel -->
-                    <div id="about-carousel" class="carousel slide carousel-content-brief" data-ride="carousel"> <!-- with-title-indicators class is omitted here -->
+                    <div id="about-carousel" class="carousel slide" data-ride="carousel"> <!-- with-title-indicators class is omitted here -->
                         <!-- carousel-indicators are omitted -->
                         <div class="carousel-inner">
-                            <div class="item active" style="height: auto !important; line-height: 1">
+                            <div class="item active">
                                 <div class="carousel-text-content">
-                                    <h2>Lorem Ipsum</h2>
+                                    <h2 class="wow fadeInDown">Lorem Ipsum</h2>
                                     <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
                                     <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
                                 </div>
                             </div>
-                            <div class="item" style="height: auto !important; line-height: 1">
+                            <div class="item">
                                 <div class="carousel-text-content">
-                                    <h2>Lorem Ipsum</h2>
+                                    <h2 class="wow fadeInDown">Lorem Ipsum</h2>
                                     <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
                                     <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
                                 </div>
                             </div>
 
                             <!-- Arrow controls -->
-                            <a href="#about-carousel" class="carousel-control left" data-slide="prev" style="display: none;">
+                            <a href="#about-carousel" class="carousel-control left" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
-                            <a href="#about-carousel" class="carousel-control right" data-slide="next" style="display: none;">
+                            <a href="#about-carousel" class="carousel-control right" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
                         </div>
