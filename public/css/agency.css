@@ -735,21 +735,126 @@ body {
 .navbar-fixed-bottom {
   -webkit-transform: translateZ(0);
 }
-.carousel-caption {
-  bottom: 15%;
+/* .carousel-caption {
+    bottom: 15%;
 }
+
 @media screen and (min-width: 768px) {
-  .carousel-indicators {
-    bottom: 30px;
-  }
+    .carousel-indicators {
+        bottom: 30px;
+    }
 }
-.carousel-inner .carousel-image {
+
+.carousel-inner  .carousel-image {
+    min-width: 100%;    
+}
+*/
+#header {
+  position: relative;
+}
+#header .drop-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#header #header-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: none;
+  /* for mobile screens */
   min-width: 100%;
   /* for large screens */
 }
-.carousel-inner > .item > img {
-  max-width: none;
-  /* for mobile screens */
+#header #header-content {
+  position: absolute;
+  padding: 40% 0 30px 0;
+  margin: 0 5%;
+  width: 90%;
+  height: 100%;
+  /* border: 2px solid white; */
+}
+@media screen and (max-height: 550px), screen and (max-width: 300px) {
+  #header #header-content .carousel-content-brief {
+    display: none;
+  }
+}
+#header #header-content #about-carousel {
+  position: relative;
+  height: 100%;
+  /* border: 1px solid red; */
+  /* should be deleted */
+  /* should be visible for larger screens */
+  /* background: url(../img/mobile_section_divider.png) no-repeat center bottom;
+            background-size: 25% auto; */
+}
+#header #header-content #about-carousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  /* should be deleted */
+}
+#header #header-content #about-carousel .carousel-inner .item {
+  position: relative;
+  margin-left: 7%;
+  margin-right: 7%;
+  width: 86%;
+  height: 100%;
+  text-align: center;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content {
+  height: 100%;
+  /* border: 1px solid white; */
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content h2 {
+  text-transform: none;
+  margin-bottom: 15px;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.2;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content .btn {
+  margin-top: 15px;
+  border-radius: 0;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content .btn-sm {
+  font-size: 0.73em;
+  padding: 10px 26px;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse {
+  color: white;
+  background-color: transparent;
+  border-color: #fff;
+}
+#header #header-content #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse:hover {
+  color: #333;
+  background-color: #fff;
+}
+#header #header-content #about-carousel .carousel-inner .carousel-control {
+  background: transparent;
+  width: 7%;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+#header #header-content #about-carousel .carousel-inner .carousel-control .glyphicon {
+  position: absolute;
+  top: 30px;
+}
+#header #header-content #about-carousel .carousel-inner .carousel-control:hover {
+  width: 5%;
+  opacity: 1;
+}
+#header #header-content #about-carousel .carousel-inner .carousel-control.left.glyphicon {
+  left: 0;
+}
+#header #header-content #about-carousel .carousel-inner .carousel-control.right.glyphicon {
+  right: 0;
 }
 .base-item {
   margin-bottom: 50px;

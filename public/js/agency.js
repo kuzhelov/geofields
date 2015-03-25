@@ -16,9 +16,12 @@ $(function() {
     });
 
     // Adjust carousel's image height according to the height of entire viewport
-	$('.carousel-inner  .carousel-image').css("max-height", $(window).height());
+	$('#header-image').css("max-height", $(window).height());
+    // TODO rework this line to another one
+    $('#header').height($('#header-image').height());
     $(window).resize(function() {
-    	$('.carousel-inner .carousel-image').css("max-height", $(window).height());
+    	$('#header-image').css("max-height", $(window).height());
+        $('#header').height($('#header-image').height());
     });
 });
 

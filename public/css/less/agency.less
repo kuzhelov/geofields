@@ -883,7 +883,7 @@ body {
     -webkit-transform: translateZ(0);
 }
 
-.carousel-caption {
+/* .carousel-caption {
     bottom: 15%;
 }
 
@@ -894,11 +894,138 @@ body {
 }
 
 .carousel-inner  .carousel-image {
-    min-width: 100%;    /* for large screens */
+    min-width: 100%;    
 }
+*/
 
-.carousel-inner>.item>img {
-    max-width: none;    /* for mobile screens */
+#header {
+    position: relative;
+
+    .drop-shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    #header-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: none;    /* for mobile screens */
+        min-width: 100%;    /* for large screens */
+    }
+
+    #header-content {
+        position: absolute;
+        padding: 40% 0 30px 0;     
+        margin: 0 5%;
+        width: 90%;
+        height: 100%;
+
+        /* border: 2px solid white; */
+
+        
+        .carousel-content-brief {
+            @media screen and (max-height: 550px), screen and (max-width: 300px) {
+                display: none;
+            }
+        }
+
+        #about-carousel {
+            position: relative;
+            height: 100%;
+            /* border: 1px solid red; */  /* should be deleted */
+
+            /* should be visible for larger screens */
+            /* background: url(../img/mobile_section_divider.png) no-repeat center bottom;
+            background-size: 25% auto; */
+
+            .carousel-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                /* border: 2px solid blue; */ /* should be deleted */
+
+                .item {
+                    position: relative;
+                    margin-left: 7%;
+                    margin-right: 7%;
+                    width: 86%;
+                    height: 100%;
+                    text-align: center;
+
+                    .carousel-text-content {
+                        height: 100%;
+                        
+                        /* border: 1px solid white; */
+
+                        h2 {
+                            text-transform: none;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font-size: 14px; 
+                            font-weight: 400;
+                            letter-spacing: 1.2;
+                        }
+
+                        .btn {
+                            margin-top: 15px;
+                            border-radius: 0;
+                        }
+
+                        .btn-sm {
+                            font-size: 0.73em;
+                            padding: 10px 26px;
+                        }
+
+                        .btn-outline-inverse {
+                            color: white;
+                            background-color: transparent;
+                            border-color: #fff;
+
+                            &:hover {
+                                color: #333;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .carousel-control {
+
+                    .glyphicon {
+                        position: absolute;
+                        top: 30px;
+                    } 
+
+                    background: transparent;
+                    width: 7%;
+                    opacity: 0.4;
+
+                    transition: all 0.4s;
+
+                    &:hover {
+                        width: 5%;
+                        opacity: 1;
+                    }
+
+                    &.left.glyphicon {
+                        left: 0;
+                       
+                    }
+
+                    &.right.glyphicon {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }   
 }
 
 @base-item-margin-bottom: 50px;

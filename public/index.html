@@ -87,23 +87,42 @@
         </nav>
 
         <!-- Header -->
-        <header id="header" class="carousel" data-ride="carousel">
+        <header id="header">
+            <img id="header-image" src="img/header-farm-ex.jpg" alt="farm">
+            <div class="drop-shadow"></div>
+            <div id="header-content">
 
-            <!-- Slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="carousel-image" src="img/header-farm-ex.jpg" alt="farm">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1 style="margin-bottom: 20px;">Welcome To Geofields!</h1>
-                            <a href="#services" class="page-scroll">
-                                <div class="fadeInUp animated" style="background-color: green; height: 50px; width: 50px; margin-left: auto; margin-right: auto; border-radius: 50%;">
-                                    <span style="color: white; font-size: 2.5rem; margin-top: -1rem; padding-top: 50%;" class="glyphicon glyphicon-chevron-down"></span>
-                                </div>              
+                <div style="position: absolute; width: 100%; height: auto !important; padding-bottom: 0; padding-top: 0; margin-left: 0; border: 1px solid white;">
+                <!-- reflects the state of #features-carousel -->
+                    <div id="about-carousel" class="carousel slide carousel-content-brief" data-ride="carousel"> <!-- with-title-indicators class is omitted here -->
+                        <!-- carousel-indicators are omitted -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="height: auto !important; line-height: 1">
+                                <div class="carousel-text-content">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                                    <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
+                                </div>
+                            </div>
+                            <div class="item" style="height: auto !important; line-height: 1">
+                                <div class="carousel-text-content">
+                                    <h2>Lorem Ipsum</h2>
+                                    <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                                    <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
+                                </div>
+                            </div>
+
+                            <!-- Arrow controls -->
+                            <a href="#about-carousel" class="carousel-control left" data-slide="prev" style="display: none;">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a href="#about-carousel" class="carousel-control right" data-slide="next" style="display: none;">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </header>
 
         <!-- Services Section -->
