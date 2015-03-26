@@ -129,13 +129,18 @@ body {
         	}
         }
 
-       	#carousel-wrapper {
-       		@carousel-wrapper-top-indent: 20px;
-       		@carousel-wrapper-height: 300px;
-       		@carousel-wrapper-bottom-indent: 50px;
 
+        @carousel-item-header-margin-bottom: 40px;
+
+        @carousel-wrapper-top-indent: 20px;
+        @carousel-wrapper-height: (300px + @carousel-item-header-margin-bottom);
+        @carousel-wrapper-bottom-indent: 50px;
+
+        @carousel-min-height: (@navbar-max-height + @carousel-wrapper-top-indent + @carousel-wrapper-height + @carousel-wrapper-bottom-indent);
+
+       	#carousel-wrapper {
        		@carousel-indicators-height: 100px;
-       		@carousel-indicators-screen-min-height: 600px;
+       		@carousel-indicators-screen-min-height: (@navbar-max-height + @carousel-wrapper-top-indent + @carousel-wrapper-height + @carousel-indicators-height + @carousel-wrapper-bottom-indent);
 
        		position: absolute;
        		top: (@navbar-max-height + @carousel-wrapper-top-indent);
@@ -281,7 +286,7 @@ body {
 
 	                        h2 {
 	                            text-transform: none;
-	                            margin-bottom: 15px;
+	                            margin-bottom: @carousel-item-header-margin-bottom;
 	                        }
 
 	                        p {
@@ -361,8 +366,7 @@ body {
         }
 
         /* Specifies visibility of header's mutually exclusive sections */
-        @media 	(min-width: 375px) and (min-height: 668px),
-        		(min-width: 668px) and (min-height: 375px) {
+        @media 	(min-width: 375px) and (min-height: @carousel-min-height) {
         	#mobile-header-wrapper {
         		display: none;
         	}
