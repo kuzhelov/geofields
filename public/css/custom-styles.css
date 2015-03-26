@@ -813,7 +813,7 @@ body {
 }
 #header #header-content #mobile-header-wrapper button .glyphicon {
   font-size: 16px;
-  margin-top: -5px;
+  margin-top: -4px;
   padding-top: 50%;
 }
 #header #header-content #mobile-header-wrapper button .glyphicon::before {
