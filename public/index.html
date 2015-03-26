@@ -97,31 +97,44 @@
                 <div id="carousel-wrapper">
                 <!-- reflects the state of #features-carousel -->
                     <div id="about-carousel" class="carousel slide" data-ride="carousel"> <!-- with-title-indicators class is omitted here -->
-                        <!-- carousel-indicators are omitted -->
+                        
+                        <ol class="carousel-indicators title-indicators">
+                            <li data-target="#about-carousel" data-slide-to="0" class="active">Welcome</li>
+                            <li data-target="#about-carousel" data-slide-to="1">Our Mission</li>
+                            <li data-target="#about-carousel" data-slide-to="2">Our Principles</li>
+                        </ol>
+
                         <div class="carousel-inner">
                             <div class="item active">
-                                <div class="carousel-text-content">
-                                    <h2 class="wow fadeInDown">Lorem Ipsum</h2>
-                                    <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                                 <div class="carousel-text-content">
+                                    <h2 class="wow fadeInDown">Welcome to Geofields!</h2>
+                                    <p class="wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, odio eu euismod interdum, metus risus blandit justo, a commodo augue lorem sit amet diam. Sed tristique bibendum justo vitae semper. Quisque eget tempor augue. Suspendisse consectetur massa id tellus sodales, eget pretium nulla blandit.</p>
                                     <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="carousel-text-content">
-                                    <h2 class="wow fadeInDown">Lorem Ipsum</h2>
-                                    <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
+                                    <h2 class="wow fadeInDown">Our Mission</h2>
+                                    <p class="wow fadeInUp">Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
                                     <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
                                 </div>
                             </div>
-
-                            <!-- Arrow controls -->
-                            <a href="#about-carousel" class="carousel-control left" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a href="#about-carousel" class="carousel-control right" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
+                            <div class="item">
+                                <div class="carousel-text-content">
+                                    <h2 class="wow fadeInDown">Our Principles</h2>
+                                    <p class="wow fadeInUp">Aenean eu ante sit amet enim feugiat vehicula. Maecenas sed arcu nec mauris aliquam mollis in sit amet est. Nam purus dui, auctor non justo nec, commodo laoreet lacus. Pellentesque sed risus blandit, cursus ex sed, dapibus metus. Morbi massa velit, gravida et sodales sed, congue non neque.</p>
+                                    <p class="wow fadeInUp"><a href="#services" class="page-scroll btn btn-sm btn-outline-inverse">read more</a></p>
+                                </div>
+                            </div>
                         </div>
+
+                         <!-- Arrow controls -->
+                        <a href="#about-carousel" class="carousel-control left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#about-carousel" class="carousel-control right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
                 </div>
             </div>
