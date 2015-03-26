@@ -837,6 +837,7 @@ body {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #header #header-content #carousel-wrapper #about-carousel .carousel-indicators.title-indicators {
     display: block;
+    opacity: 1;
   }
 }
 #header #header-content #carousel-wrapper #about-carousel .carousel-indicators.title-indicators li {
