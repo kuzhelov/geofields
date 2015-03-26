@@ -759,6 +759,9 @@ body {
   height: 100%;
   width: 100%;
 }
+#header a {
+  color: #fff;
+}
 #header #header-image {
   position: absolute;
   bottom: 0;
@@ -776,11 +779,40 @@ body {
 }
 #header #header-content {
   position: relative;
-  /* padding: 40% 0 30px 0; */
   margin: 0 5%;
   width: 90%;
   height: 100%;
-  /* border: 2px solid white; */
+  /* Specifies visibility of header's mutually exclusive sections */
+}
+#header #header-content #mobile-header-wrapper {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#header #header-content #mobile-header-wrapper p {
+  letter-spacing: 1px;
+}
+#header #header-content #mobile-header-wrapper button {
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+}
+#header #header-content #mobile-header-wrapper button .glyphicon {
+  font-size: 16px;
+  margin-top: -8px;
+  padding-top: 50%;
+}
+#header #header-content #mobile-header-wrapper button .glyphicon::before {
+  /* cosmetic adjustment */
+  margin-left: -1px;
 }
 #header #header-content #carousel-wrapper {
   position: absolute;
@@ -788,6 +820,7 @@ body {
   left: 0;
   width: 100%;
   height: auto;
+  display: none;
 }
 @media (min-width: 768px) and (min-height: 600px) {
   #header #header-content #carousel-wrapper {
@@ -972,6 +1005,14 @@ body {
 @media (min-width: 992px) {
   #header #header-content #carousel-wrapper #about-carousel .carousel-control.right {
     right: 13%;
+  }
+}
+@media (min-width: 375px) and (min-height: 668px), (min-width: 668px) and (min-height: 375px) {
+  #header #header-content #mobile-header-wrapper {
+    display: none;
+  }
+  #header #header-content #carousel-wrapper {
+    display: block;
   }
 }
 .base-item {

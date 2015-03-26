@@ -46,6 +46,10 @@ body {
     height: 100%;
     width: 100%;
 
+	a {
+		color: #fff;
+	}
+
     #header-image {
     	position: absolute;
     	bottom: 0;
@@ -66,12 +70,56 @@ body {
 
     #header-content {
         position: relative;
-        /* padding: 40% 0 30px 0; */
         margin: 0 5%;
         width: 90%;
         height: 100%;
 
-        /* border: 2px solid white; */
+        #mobile-header-wrapper {
+        	position: absolute;
+
+        	bottom: 70px;
+        	left: 0;
+
+        	width: 100%;
+        	height: auto;
+
+        	text-align: center;
+
+        	p {
+        		letter-spacing: 1px;
+        	}
+
+        	button {
+        		@arrow-font-size: 16px;
+        		@button-size: (3 * @arrow-font-size);
+
+        		display: inline-block;
+        		position: relative;
+
+        		margin-top: 10px;
+
+        		width: (@button-size);
+        		height: (@button-size);
+
+        		border: 2px solid #fff;
+        		border-radius: 50%;
+
+        		background-color: transparent;
+
+        		.glyphicon {
+        			font-size: @arrow-font-size;
+
+        			margin-top: -(@arrow-font-size / 2);
+        			padding-top: 50%;
+
+        			&::before {
+        				/* cosmetic adjustment */
+        				margin-left: -1px;
+        			}
+        		}
+
+        	}
+        }
 
        	#carousel-wrapper {
        		@carousel-wrapper-top-indent: 20px;
@@ -86,6 +134,8 @@ body {
        		left: 0;
        		width: 100%;
        		height: auto;
+
+       		display: none;
        		
        		@media (min-width: @screen-sm-min) {
 
@@ -300,6 +350,18 @@ body {
                     }
                 }
 	        }
+        }
+
+        /* Specifies visibility of header's mutually exclusive sections */
+        @media 	(min-width: 375px) and (min-height: 668px),
+        		(min-width: 668px) and (min-height: 375px) {
+        	#mobile-header-wrapper {
+        		display: none;
+        	}
+
+        	#carousel-wrapper {
+        		display: block;
+        	}
         }
     }   
 }
