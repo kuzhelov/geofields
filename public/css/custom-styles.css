@@ -1210,16 +1210,46 @@ section.pre-footer {
 }
 .modal .modal-body .body-elements-root .service-method .check-sign {
   float: left;
-  width: 40px;
+  width: 20px;
   text-align: right;
-  margin: 10px;
+  margin-top: 10px;
+}
+@media (min-width: 480px) {
+  .modal .modal-body .body-elements-root .service-method .check-sign {
+    width: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .modal .modal-body .body-elements-root .service-method .check-sign {
+    width: 40px;
+  }
 }
 .modal .modal-body .body-elements-root .service-method .check-sign i {
-  font-size: 32px;
+  font-size: 20px;
   color: #0DA50D;
 }
+@media (min-width: 480px) {
+  .modal .modal-body .body-elements-root .service-method .check-sign i {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .modal .modal-body .body-elements-root .service-method .check-sign i {
+    font-size: 32px;
+  }
+}
 .modal .modal-body .body-elements-root .service-method .description {
-  margin-left: 80px;
+  margin-left: 40px;
+}
+@media (min-width: 480px) {
+  .modal .modal-body .body-elements-root .service-method .description {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .modal .modal-body .body-elements-root .service-method .description {
+    margin-left: 80px;
+  }
 }
 .modal .modal-body .body-elements-root .service-method .description h4 {
   text-transform: none;

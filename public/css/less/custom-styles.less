@@ -601,19 +601,43 @@ section.pre-footer {
                 
                 .check-sign {
                     float: left;
-                    width: 40px;
+                    width: 20px;
                     text-align: right;
 
-                    margin: 10px;
+                    margin-top: 10px;
+
+                    @media (min-width: @screen-xs) {
+                        width: 30px;
+                    }
+
+                    @media (min-width: @screen-sm-min) {
+                        width: 40px;
+                    }
 
                     i {
-                        font-size: 32px;
+                        font-size: 20px;
                         color: #0DA50D;
+
+                        @media (min-width: @screen-xs) {
+                            font-size: 24px;
+                        }
+
+                        @media (min-width: @screen-sm-min) {
+                            font-size: 32px;
+                        }
                     }
                 }
 
                 .description {
-                    margin-left: 80px;
+                    margin-left: 40px;
+
+                    @media (min-width: @screen-xs) {
+                        margin-left: 60px;
+                    }
+
+                    @media (min-width: @screen-sm-min) {
+                         margin-left: 80px;
+                    }
 
                     h4 {
                         text-transform: none;
