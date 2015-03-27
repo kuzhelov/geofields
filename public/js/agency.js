@@ -31,3 +31,10 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Prevents carousel from sliding when mouse is hover over its area
+$('#carousel-wrapper').hover(function () { 
+  $('#about-carousel').carousel('pause') 
+}, function () { 
+  $('#about-carousel').carousel('cycle') 
+})
