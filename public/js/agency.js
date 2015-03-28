@@ -14,12 +14,6 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-
-    // Adjust carousel's image height according to the height of entire viewport
-	$('#header-image').css("max-height", $(window).height());
-    $(window).resize(function() {
-    	$('#header-image').css("max-height", $(window).height());
-    });
 });
 
 // Highlight the top nav as scrolling occurs
