@@ -50,13 +50,31 @@ body {
 		color: #fff;
 	}
 
+    @carousel-item-header-margin-bottom: 40px;
+
+    @carousel-wrapper-top-indent: 20px;
+    @carousel-wrapper-height: (300px + @carousel-item-header-margin-bottom);
+    @carousel-wrapper-bottom-indent: 50px;
+
+    @carousel-min-height: (@navbar-max-height + @carousel-wrapper-top-indent + @carousel-wrapper-height + @carousel-wrapper-bottom-indent);
+    @carousel-min-width: 375px;
+
     #header-image {
     	position: absolute;
     	bottom: 0;
     	right: 0;
 
-    	min-width: 100%;
-    	min-height: 100%;
+    	width: 100%;
+        height: 100%;
+
+        /* Entire image should be visible on mobile screens regardless of their resolution */
+        @media  (min-width: @carousel-min-width) and (min-height: @carousel-min-height) {
+            width: initial;
+            height: initial;
+
+            min-width: 100%;
+            min-height: 100%;
+        }
     }
 
     .drop-shadow {
@@ -128,15 +146,6 @@ body {
 
         	}
         }
-
-
-        @carousel-item-header-margin-bottom: 40px;
-
-        @carousel-wrapper-top-indent: 20px;
-        @carousel-wrapper-height: (300px + @carousel-item-header-margin-bottom);
-        @carousel-wrapper-bottom-indent: 50px;
-
-        @carousel-min-height: (@navbar-max-height + @carousel-wrapper-top-indent + @carousel-wrapper-height + @carousel-wrapper-bottom-indent);
 
        	#carousel-wrapper {
        		@carousel-indicators-height: 100px;
@@ -366,7 +375,7 @@ body {
         }
 
         /* Specifies visibility of header's mutually exclusive sections */
-        @media 	(min-width: 375px) and (min-height: @carousel-min-height) {
+        @media 	(min-width: @carousel-min-width) and (min-height: @carousel-min-height) {
         	#mobile-header-wrapper {
         		display: none;
         	}
