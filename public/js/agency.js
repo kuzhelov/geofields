@@ -32,3 +32,11 @@ $('#carousel-wrapper').hover(function () {
 }, function () { 
   $('#about-carousel').carousel('cycle') 
 })
+
+/* function resizeEventsSection() {
+    var eventsSection = $('#events');
+    eventsSection.height($(window).height() - 300);
+}
+
+$(window).resize(resizeEventsSection);
+resizeEventsSection(); */
