@@ -1407,11 +1407,11 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 100%;
-  line-height: 1;
-  font-family: inherit;
+  /* font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit; */
   width: auto;
   float: none;
 }
@@ -1568,12 +1568,9 @@ body {
 .vco-storyjs .era h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
-.vco-storyjs p,
-.vco-storyjs blockquote,
-.vco-storyjs blockquote p,
-.vco-storyjs .twitter blockquote p {
-  font-family: "Georgia", Times New Roman, Times, serif !important;
-}
+/* .vco-storyjs p, .vco-storyjs blockquote, .vco-storyjs blockquote p, .vco-storyjs .twitter blockquote p {
+    font-family: "Georgia", Times New Roman, Times, serif !important
+} */
 /*.vco-storyjs .vco-feature h1,.vco-storyjs .vco-feature h2,.vco-storyjs .vco-feature h3,.vco-storyjs .vco-feature h4,.vco-storyjs .vco-feature h5,.vco-storyjs .vco-feature h6
 {
         font-family:"Helvetica Neue","Georgia",Times New Roman,Times,serif
@@ -1589,10 +1586,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .vco-storyjs p {
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 20px;
-  margin-bottom: 20px;
+  /* font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 20px; */
   color: #666666;
 }
 .vco-storyjs p small {
