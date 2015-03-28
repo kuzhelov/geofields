@@ -1175,7 +1175,7 @@ section.pre-footer {
 }
 .modal .modal-header .close-modal {
   line-height: 1;
-  padding: 0;
+  padding: 5px 10px 10px 10px;
   float: right;
   background-color: initial;
   border: none;
