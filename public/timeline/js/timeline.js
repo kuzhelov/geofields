@@ -555,7 +555,7 @@ if(typeof VMM != 'undefined') {
 		}
 		
 		if (cName != null && cName != "") {
-			_class = cName;
+			_class = cName.replace(/^\./, '');
 		}
 		
 		if (content != null && content != "") {
@@ -5281,6 +5281,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			
 			current_width = config.slider.width;
 			
+			// config.slider.height = $('.vco-feature').css('height');
 			config.slider.nav.height = VMM.Lib.height(navigation.prevBtnContainer);
 			
 			// Handle smaller sizes
@@ -5541,7 +5542,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			mediasize.media.video				= VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
 			
 			VMM.Lib.css(".slider-item", "width", config.slider.content.width );
-			VMM.Lib.height(".slider-item", config.slider.height);
+			// VMM.Lib.height(".slider-item", config.slider.height);
+			VMM.Lib.css(".slider-item", "height", '100%' );
 			
 			
 			
@@ -5864,9 +5866,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			
 			// Get DOM Objects to local objects
 			$slider				= VMM.getElement(layout);
-			$slider_mask		= VMM.appendAndGetElement($slider, "<div>", "slider-container-mask");
-			$slider_container	= VMM.appendAndGetElement($slider_mask, "<div>", "slider-container");
-			$slides_items		= VMM.appendAndGetElement($slider_container, "<div>", "slider-item-container");
+			$slider_mask		= VMM.appendAndGetElement($slider, "<div>", ".slider-container-mask"); //
+			$slider_container	= VMM.appendAndGetElement($slider_mask, "<div>", ".slider-container"); //
+			$slides_items		= VMM.appendAndGetElement($slider_container, "<div>", ".slider-item-container"); //
 			
 			
 			// BUILD NAVIGATION
@@ -7159,6 +7161,10 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			}
 		}
 		
+		function getFeatureHeight() {
+			return parseInt($('.vco-feature').css('height'), 10);
+		}
+
 		/* CREATE CONFIG
 		================================================== */
 		function createConfig(conf) {
@@ -7181,7 +7187,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			config.nav.width			= config.width;
 			config.nav.height			= 200;
 			config.feature.width		= config.width;
-			config.feature.height		= config.height - config.nav.height;
+			config.feature.height		= getFeatureHeight(); config.height - config.nav.height; // getFeatureHeight()
 			config.nav.zoom.adjust		= parseInt(config.start_zoom_adjust, 10);
 			VMM.Timeline.Config			= config;
 			VMM.master_config.Timeline	= VMM.Timeline.Config;
@@ -7511,7 +7517,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 			config.nav.width = config.width;
 			config.feature.width = config.width;
 			
-			config.feature.height = config.height - config.nav.height - 3;
+			config.feature.height = getFeatureHeight(); // config.height - config.nav.height - 3; // getFeatureHeight()
 			
 			if (VMM.Browser.device == "mobile") {
 				/*

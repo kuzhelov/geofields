@@ -1314,10 +1314,17 @@ body {
   width: 100%;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature {
+  height: 400px;
   position: relative;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider {
   box-shadow: none;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container {
+  display: block;
+  position: relative;
+  height: 100%;
+  vertical-align: initial;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
   display: none;
