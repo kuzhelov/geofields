@@ -1307,6 +1307,26 @@ body {
     text-align: justify;
   }
 }
+#timeline-embed #storyjs-timeline .vco-container {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature {
+  position: relative;
+}
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider {
   box-shadow: none;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-navigation {
+  display: none;
+}
+@media (min-height: 700px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
+    display: block;
+  }
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-navigation .timenav-background {
+  display: none;
 }

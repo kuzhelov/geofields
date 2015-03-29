@@ -621,11 +621,32 @@ body {
 
         .vco-container {
 
+            display: block;
+            position: relative;
+
+            height: auto;
+            width: 100%;
+
             .vco-feature {
+
+                position: relative;
+
 
                 .vco-slider {
 
                     box-shadow: none;
+                }
+            }
+
+            .vco-navigation {
+                display: none;
+
+                @media (min-height: 700px) {
+                    display: block;
+                }
+
+                .timenav-background {
+                    display: none;
                 }
             }
         }
