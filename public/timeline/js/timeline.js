@@ -709,7 +709,7 @@ if(typeof VMM != 'undefined') {
 		
 		css: function(element, prop, value) {
 
-			if (value != null && value != "") {
+			if (value !== null && value !== "") {
 				if( typeof( jQuery ) != 'undefined' ){
 					jQuery(element).css(prop, value);
 				}
@@ -5585,7 +5585,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				VMM.Lib.css(".slider-item .media blockquote p", "line-height", "36px" );
 				VMM.Lib.css(".slider-item .media blockquote p", "font-size", "28px" );
 				
-				VMM.Lib.css(".slider-item", "display", "table" );
+				// VMM.Lib.css(".slider-item", "display", "table" );
+				VMM.Lib.css(".slider-item", "display", "inline-block" );
+
 				VMM.Lib.css(".slider-item", "overflow-y", "auto" );
 			}
 			
@@ -5665,7 +5667,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				if (slides[i].content_height() > config.slider.height + 20) {
 					slides[i].css("display", "block");
 				} else {
-					slides[i].css("display", "table");
+					/* slides[i].css("display", "table"); */
 				}
 			}
 			

@@ -1,0 +1,21 @@
+.vco-feature .vco-slider .slider-container-mask .slider-item-container {
+  display: block;
+  position: relative;
+  width: 2640px;
+  height: auto;
+  /* ? */
+}
+.vco-feature .vco-slider .slider-container-mask .slider-item-container .slider-item {
+  /* ok */
+  display: inline-block;
+  width: 880px;
+}
+.vco-feature .vco-slider .slider-container-mask .slider-item-container .slider-item:first {
+  left: 0px;
+}
+.vco-feature .vco-slider .slider-container-mask .slider-item-container .slider-item:second {
+  left: 880px;
+}
+.vco-feature .vco-slider .slider-container-mask .slider-item-container .slider-item:third {
+  left: 1760px;
+}

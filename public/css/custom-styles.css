@@ -2054,6 +2054,12 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+.slider-item-container {
+  display: block !important;
+  position: relative !important;
+  height: auto !important;
+  vertical-align: initial !important;
+}
 .vco-notouch .vco-slider .nav-previous:hover,
 .vco-notouch .vco-slider .nav-next:hover {
   color: #333;
