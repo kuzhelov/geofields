@@ -1314,7 +1314,7 @@ body {
   width: 100%;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature {
-  height: 400px;
+  height: 300px;
   position: relative;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider {
@@ -1325,6 +1325,94 @@ body {
   position: relative;
   height: 100%;
   vertical-align: initial;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container {
+  display: block;
+  position: relative;
+  vertical-align: initial;
+  width: 100%;
+  height: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media {
+  position: relative;
+  display: block;
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image.media-shadow:before,
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image.media-shadow:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image.media-shadow:before {
+  left: 10px;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image.media-shadow:after {
+  right: 10px;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper .media-container .media-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text {
+  position: relative;
+  display: block;
+  float: left;
+  width: 60%;
+  height: 100%;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
   display: none;

@@ -5569,21 +5569,21 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				VMM.Lib.css(".slider-item .media blockquote p", "line-height", "18px" );
 				VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
 				
-				VMM.Lib.css(".slider-item", "overflow-y", "auto" );
+				// VMM.Lib.css(".slider-item", "overflow-y", "auto" );
 				
 				
 			} else {
 				
-				VMM.Lib.css(".slider-item .layout-text-media .text", "width", "40%" );
-				VMM.Lib.css(".slider-item .layout-text-media .text", "display", "table-cell" );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "table-cell" );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", "auto" );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", mediasize.text_media.text.width );
+				// VMM.Lib.css(".slider-item .layout-text-media .text", "width", "40%" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text", "display", "table-cell" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "table-cell" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", "auto" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", mediasize.text_media.text.width );
 				//VMM.Lib.addClass(".slider-item .content-container", "pad-left");
 				VMM.Lib.removeClass(".slider-item .content-container", "pad-top");
 				
-				VMM.Lib.css(".slider-item .layout-text-media .media", "float", "left" );
-				VMM.Lib.css(".slider-item .layout-text-media", "display", "table" );
+				// VMM.Lib.css(".slider-item .layout-text-media .media", "float", "left" );
+				// VMM.Lib.css(".slider-item .layout-text-media", "display", "table" );
 				
 				VMM.Lib.css(".slider-item .media blockquote p", "line-height", "36px" );
 				VMM.Lib.css(".slider-item .media blockquote p", "font-size", "28px" );
@@ -5591,7 +5591,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				// VMM.Lib.css(".slider-item", "display", "table" );
 				VMM.Lib.css(".slider-item", "display", "inline-block" );
 
-				VMM.Lib.css(".slider-item", "overflow-y", "auto" );
+				// VMM.Lib.css(".slider-item", "overflow-y", "auto" );
 			}
 			
 			// MEDIA FRAME
@@ -5603,11 +5603,11 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			//VMM.Lib.css(	layout_both + 		".website", 			"max-width", 	300 );
 			
 			// IMAGES
-			VMM.Lib.css(	layout_text_media + "img", 					"max-height", 	mediasize.text_media.height );
-			VMM.Lib.css(	layout_media + 		"img", 					"max-height", 	mediasize.media.height );
+			// VMM.Lib.css(	layout_text_media + "img", 					"max-height", 	mediasize.text_media.height );
+			// VMM.Lib.css(	layout_media + 		"img", 					"max-height", 	mediasize.media.height );
 			
 			// FIX FOR NON-WEBKIT BROWSERS
-			VMM.Lib.css(	layout_text_media + "img", 					"max-width", 	mediasize.text_media.width );
+			// VMM.Lib.css(	layout_text_media + "img", 					"max-width", 	mediasize.text_media.width );
 			VMM.Lib.css(	layout_text_media + ".avatar img", "max-width", 			32 );
 			VMM.Lib.css(	layout_text_media + ".avatar img", "max-height", 			32 );
 			VMM.Lib.css(	layout_media + 		".avatar img", "max-width", 			32 );
@@ -5653,7 +5653,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			VMM.Lib.width(	layout_media + 		".plain-text-quote", 					mediasize.media.width);
 			VMM.Lib.width(	layout_media + 		".plain-text", 							mediasize.media.width);
 			
-			VMM.Lib.css(	layout_both, 		"max-width", 							mediasize.media.width);
+			// VMM.Lib.css(	layout_both, 		"max-width", 							mediasize.media.width);
 			
 			
 			// CAPTION WIDTH

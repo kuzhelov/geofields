@@ -629,7 +629,7 @@ body {
 
             .vco-feature {
 
-                height: 400px;
+                height: 300px;
                 position: relative;
 
                 .vco-slider {
@@ -646,6 +646,124 @@ body {
 
                                 height: 100%;
                                 vertical-align: initial;
+
+                                .slider-item {
+                                    position: relative;
+                                    display: block;
+
+                                    height: 100%;
+                                    overflow-y: hidden;
+                                    overflow-x: hidden;
+
+                                    .content {
+                                        position: relative;
+                                        display: block;
+
+                                        width: 100%;
+                                        height: 100%;
+
+                                        .content-container {
+                                            display: block;
+                                            position: relative;
+
+                                            vertical-align: initial;
+
+                                            width: 100%;
+                                            height: 100%;
+
+                                            .media {
+                                                position: relative;
+                                                display: block;
+                                                float: left;
+
+                                                width: 40%;
+                                                height: 100%;
+
+                                                .media-wrapper {
+                                                    position: relative;
+                                                    display: block;
+
+                                                    width: 100%;
+                                                    height: 100%;
+
+                                                    .media-container {
+                                                        position: relative;
+                                                        display: block;
+
+                                                        width: 100%;
+                                                        height: 100%;
+
+                                                        .media-image {
+                                                            position: relative;
+                                                            display: inline-block;
+
+                                                            width: auto;
+                                                            max-width: 100%;
+                                                            height: auto;
+
+                                                            &.media-shadow {
+                                                                @shadow-angle: 3deg;
+                                                                @sharow-side-offset: 10px;
+
+                                                                &:before,
+                                                                &:after {
+                                                                    z-index: -1;
+                                                                    position: absolute;
+                                                                    content: "";
+                                                                    bottom: 15px;
+                                                                    
+                                                                    width: 50%;
+                                                                    top: 80%;
+                                                                    max-width:300px;
+                                                                    background: #777;
+                                                                    -webkit-box-shadow: 0 15px 10px #777;
+                                                                    -moz-box-shadow: 0 15px 10px #777;
+                                                                    box-shadow: 0 15px 10px #777;
+                                                                    
+                                                                }
+
+                                                                &:before {
+                                                                    left: @sharow-side-offset;
+                                                                    -webkit-transform: rotate(-@shadow-angle);
+                                                                    -moz-transform: rotate(-@shadow-angle);
+                                                                    -o-transform: rotate(-@shadow-angle);
+                                                                    -ms-transform: rotate(-@shadow-angle);
+                                                                    transform: rotate(-@shadow-angle);
+                                                                }
+
+                                                                 &:after {
+                                                                    right: @sharow-side-offset;
+                                                                    -webkit-transform: rotate(@shadow-angle);
+                                                                    -moz-transform: rotate(@shadow-angle);
+                                                                    -o-transform: rotate(@shadow-angle);
+                                                                    -ms-transform: rotate(@shadow-angle);
+                                                                    transform: rotate(@shadow-angle);
+                                                                }
+                                                            }
+
+                                                            img {
+                                                                display: block;
+                                                                
+                                                                max-width: 100%;
+                                                                height: auto;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .text {
+                                                position: relative;
+                                                display: block;
+                                                float: left;
+
+                                                width: 60%;
+                                                height: 100%;
+                                            }
+                                        }
+
+                                    }
+                                }
                             }
                         }
                     }
