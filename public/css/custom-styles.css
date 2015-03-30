@@ -1424,6 +1424,7 @@ body {
   height: auto;
   /* should be eliminated for 'read more' button scenario */
   padding: 0 15px 0 30px;
+  overflow-y: hidden;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
   display: none;
