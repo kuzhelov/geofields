@@ -1420,13 +1420,9 @@ body {
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container {
   position: relative;
-  /* position: absolute */
   display: block;
-  /* top: 0; */
-  /* bottom: 40px; */
   width: auto;
-  height: auto;
-  /* should be eliminated for 'read more' button scenario */
+  height: 100%;
   padding: 0 15px 0 30px;
   overflow-y: hidden;
 }
