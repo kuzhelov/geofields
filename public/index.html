@@ -562,13 +562,9 @@
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
 
-        <!-- Timeline initialization -->
-        <script type="text/javascript" src="timeline/js/storyjs-embed.js"></script>
-
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
 
-        
         <!-- Angular support -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
         <script src="js/geofields.min.js"></script>
@@ -580,6 +576,27 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/cbpAnimatedHeader.js"></script>
+
+        <!-- Timeline initialization -->
+         <script type="text/javascript">
+
+            $('#timeline-embed').on('timeline-resized', function() {
+                console.log('yep!');
+
+                $('div.check-overflow-y').each(function() {
+                    var element = this;
+                    if (element.offsetHeight < element.scrollHeight) {
+                        $(element).css("border", "1px solid red");
+                    } else {
+                        // your element doesn't have overflow
+                    }
+                });
+            });
+           
+
+        </script>
+        <script type="text/javascript" src="timeline/js/storyjs-embed.js"></script>
+       
 
         <!-- Contact Form JavaScript -->
         <script src="js/jqBootstrapValidation.js"></script>

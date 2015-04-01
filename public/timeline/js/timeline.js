@@ -5491,6 +5491,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			}
 			
 			sizeSlides();
+
+			$($slider).trigger('timeline-resized');
 		}
 		
 		function sizeSlide(slide_id) {
@@ -6153,11 +6155,12 @@ if (typeof VMM.Slider != 'undefined') {
 			}
 			
 			if (c.has.text || c.has.headline) {
-				c.text		= VMM.createElement("div", c.text, "container");
-				//$text		=	VMM.appendAndGetElement($slide, "<div>", "text", c.text);
+				var textContainerDiv = $.parseHTML(VMM.createElement("div", c.text, "container"));
+				$(textContainerDiv).addClass('check-overflow-y');
+
+				c.text		= $(textContainerDiv).prop('outerHTML');
 				
-				$text		= VMM.appendAndGetElement($slide, "<div>", "text", VMM.TextElement.create(c.text));
-				
+				$text		= VMM.appendAndGetElement($slide, "<div>", "text", VMM.TextElement.create(c.text));		
 			}
 			
 			/* SLUG
