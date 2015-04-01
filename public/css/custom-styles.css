@@ -735,6 +735,16 @@ html {
 body {
   height: 100%;
 }
+.read-more.btn {
+  border-radius: 0;
+}
+.read-more.btn-sm {
+  font-size: 0.73em;
+  padding: 10px 26px;
+}
+.read-more.btn-outline-inverse {
+  background-color: transparent;
+}
 /* this should prevent navbar blinking on Chrome */
 .navbar-fixed-top,
 .navbar-fixed-bottom {
@@ -958,20 +968,14 @@ body {
   font-weight: 400;
   letter-spacing: 1.2;
 }
-#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn {
-  margin-top: 15px;
-  border-radius: 0;
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .read-more {
+  margin: 15px 0 0 0;
 }
-#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-sm {
-  font-size: 0.73em;
-  padding: 10px 26px;
-}
-#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse {
-  color: white;
-  background-color: transparent;
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .read-more.btn-outline-inverse {
+  color: #fff;
   border-color: #fff;
 }
-#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .btn-outline-inverse:hover {
+#header #header-content #carousel-wrapper #about-carousel .carousel-inner .item .carousel-text-content .read-more.btn-outline-inverse:hover {
   color: #333;
   background-color: #fff;
 }
