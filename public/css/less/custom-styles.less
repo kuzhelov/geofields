@@ -767,9 +767,14 @@ body {
                                                 position: relative;
                                                 display: block;
                                                 float: left;
-
+                                                
                                                 width: 60%;
                                                 height: 100%;
+
+                                                box-sizing: border-box;
+                                                padding: 0 15px 0 30px;
+
+                                                text-align: left;
 
                                                 .container {
                                                     position: relative;
@@ -778,10 +783,48 @@ body {
                                                     width: auto;
                                                     height: 100%;
 
-                                                    padding: 0 15px 0 30px;
+                                                    padding: 0; /* prevent collision with the bootstrap css selector */
+                                                    overflow-y: hidden;                    
 
-                                                    overflow-y: hidden;
+                                                    &.has-overflow-y {
+                                                        .read-more {
+                                                            visibility: visible;
+
+                                                            &.btn-outline-inverse {
+                                                                color: #333;
+                                                                border-color: #333;
+
+                                                                &:hover {
+                                                                    color: #fff;
+                                                                    background-color: #333;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                 }
+
+                                                .read-more {
+                                                    position: absolute;
+                                                    bottom: 0;
+
+                                                    margin: 10px 0 0 0;
+
+                                                    visibility: hidden;
+                                                }
+
+                                                .container.has-overflow-y + .read-more {
+                                                        visibility: visible;
+
+                                                        &.btn-outline-inverse {
+                                                            color: #333;
+                                                            border-color: #333;
+
+                                                            &:hover {
+                                                                color: #fff;
+                                                                background-color: #333;
+                                                            }
+                                                        }
+                                                    }
                                             }
                                         }
 
@@ -795,6 +838,7 @@ body {
 
             .vco-navigation {
                 display: none;
+                margin-top: 45px;
 
                 @media (min-height: 700px) {
                     display: block;

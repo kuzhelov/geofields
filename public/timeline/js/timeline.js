@@ -6156,7 +6156,6 @@ if (typeof VMM.Slider != 'undefined') {
 			
 			if (c.has.text || c.has.headline) {
 				var textContainerDiv = $.parseHTML(VMM.createElement("div", c.text, "container"));
-				$(textContainerDiv).addClass('check-overflow-y');
 
 				c.text		= $(textContainerDiv).prop('outerHTML');
 				

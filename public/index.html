@@ -580,17 +580,80 @@
         <!-- Timeline initialization -->
          <script type="text/javascript">
 
+            var overflowedYClass = "has-overflow-y";
+            var overflowYHandledClass = "overflow-y-handled";
+
+            var hasOverflowY = function(element) {
+                 return element.offsetHeight < element.scrollHeight;
+            };
+
+            var setClassForOverflowedY = function(elementsArray) {
+                $(elementsArray).each(function() {
+                    if (hasOverflowY(this)) {
+                        $(this).addClass(overflowedYClass);
+                    } else {
+                        $(this).removeClass(overflowedYClass);
+                    }
+                });
+            };
+
+            var createReadMoreButton = function(text) {
+                var element = document.createElement('div');
+                $(element)
+                    .addClass('read-more btn btn-sm btn-outline-inverse')
+                    .attr('data-toggle', 'modal') // just for testing
+                    .attr('data-target', '#service-coal')
+                    .html(text);
+
+                return element;
+            };
+
+            HTMLElement.prototype.hasChild = function (selector) {
+                return $(this).has(selector).length > 0;
+            };
+
+            String.prototype.asClassSelector = function() {
+                if (this[0] === '.') {
+                    return;
+                }
+
+                return "." + this;
+            };
+
             $('#timeline-embed').on('timeline-resized', function() {
                 console.log('yep!');
 
-                $('div.check-overflow-y').each(function() {
-                    var element = this;
-                    if (element.offsetHeight < element.scrollHeight) {
-                        $(element).css("border", "1px solid red");
-                    } else {
-                        // your element doesn't have overflow
-                    }
-                });
+                var slideTextContainers = $('#timeline-embed .slider-item .text .container');
+
+                setClassForOverflowedY(slideTextContainers);
+
+                // reset properties for not overflowed containers
+                $(slideTextContainers)
+                    .not(overflowedYClass.asClassSelector())
+                    .each(function() {
+                        $(this).height('inherit');
+                    });
+
+                // set properties for overflowed containers
+                $(slideTextContainers)
+                    .filter(overflowedYClass.asClassSelector())
+                    .each(function() {
+
+                        var overflowedTextContainer = this;
+
+                        // prevent multiple height decrease of the container element
+                        if ($(overflowedTextContainer).hasClass(overflowYHandledClass)) {
+                            return;
+                        }
+                        
+                        var readMoreButton = createReadMoreButton('read more');
+                        $(overflowedTextContainer).parent().append(readMoreButton);
+
+                        var initialContainerHeight = $(overflowedTextContainer).height();
+                        $(overflowedTextContainer).height(initialContainerHeight - $(readMoreButton).outerHeight(true));
+
+                        $(overflowedTextContainer).addClass(overflowYHandledClass);
+                    });
             });
            
 
