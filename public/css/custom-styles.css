@@ -1354,7 +1354,7 @@ body {
   position: relative;
   display: block;
   float: left;
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper {
@@ -1415,7 +1415,7 @@ body {
   position: relative;
   display: block;
   float: left;
-  width: 60%;
+  width: 50%;
   height: 100%;
   box-sizing: border-box;
   padding: 0 15px 0 30px;
@@ -1430,17 +1430,6 @@ body {
   /* prevent collision with the bootstrap css selector */
   overflow-y: hidden;
 }
-#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y .read-more {
-  visibility: visible;
-}
-#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y .read-more.btn-outline-inverse {
-  color: #333;
-  border-color: #333;
-}
-#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y .read-more.btn-outline-inverse:hover {
-  color: #fff;
-  background-color: #333;
-}
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more {
   position: absolute;
   bottom: 0;
@@ -1451,16 +1440,16 @@ body {
   visibility: visible;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more.btn-outline-inverse {
-  color: #333;
-  border-color: #333;
+  color: #666;
+  border-color: #666;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more.btn-outline-inverse:hover {
   color: #fff;
-  background-color: #333;
+  background-color: #666;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
   display: none;
-  margin-top: 45px;
+  margin-top: 55px;
 }
 @media (min-height: 700px) {
   #timeline-embed #storyjs-timeline .vco-container .vco-navigation {
