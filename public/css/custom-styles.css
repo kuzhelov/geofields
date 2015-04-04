@@ -1355,8 +1355,14 @@ body {
   display: block;
   float: left;
   padding-top: 20px;
-  width: 35%;
-  height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media {
+    display: block;
+    width: 35%;
+    height: 100%;
+  }
 }
 @media (min-width: 992px) {
   #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media {
@@ -1421,11 +1427,18 @@ body {
   position: relative;
   display: block;
   float: left;
-  width: 65%;
-  height: 100%;
   box-sizing: border-box;
-  padding: 0 15px 0 30px;
-  text-align: left;
+  padding: 0 15px 0 15px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text {
+    width: 65%;
+    text-align: left;
+    padding-left: 30px;
+  }
 }
 @media (min-width: 992px) {
   #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text {
@@ -1440,12 +1453,23 @@ body {
   padding: 0;
   /* prevent collision with the bootstrap css selector */
   overflow-y: hidden;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container {
+    text-align: left;
+  }
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more {
   position: absolute;
   bottom: 0;
-  margin: 10px 0 10px 0;
   visibility: hidden;
+  margin: 10px 0 10px -50px;
+}
+@media (min-width: 768px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more {
+    margin-left: 0;
+  }
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more {
   visibility: visible;
