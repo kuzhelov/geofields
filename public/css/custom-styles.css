@@ -1318,7 +1318,7 @@ body {
   width: 100%;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature {
-  height: 300px;
+  height: 350px;
   position: relative;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider {
@@ -1354,8 +1354,14 @@ body {
   position: relative;
   display: block;
   float: left;
-  width: 50%;
+  padding-top: 20px;
+  width: 35%;
   height: 100%;
+}
+@media (min-width: 992px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media {
+    width: 50%;
+  }
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .media .media-wrapper {
   position: relative;
@@ -1415,11 +1421,16 @@ body {
   position: relative;
   display: block;
   float: left;
-  width: 50%;
+  width: 65%;
   height: 100%;
   box-sizing: border-box;
   padding: 0 15px 0 30px;
   text-align: left;
+}
+@media (min-width: 992px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text {
+    width: 50%;
+  }
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container {
   position: relative;
@@ -1433,7 +1444,7 @@ body {
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more {
   position: absolute;
   bottom: 0;
-  margin: 10px 0 0 0;
+  margin: 10px 0 10px 0;
   visibility: hidden;
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more {

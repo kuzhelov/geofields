@@ -640,7 +640,7 @@ body {
 
             .vco-feature {
 
-                height: 300px;
+                height: 350px;
                 position: relative;
 
                 .vco-slider {
@@ -687,8 +687,14 @@ body {
                                                 display: block;
                                                 float: left;
 
-                                                width: 50%;
+                                                padding-top: 20px;
+
+                                                width: 35%;
                                                 height: 100%;
+
+                                                @media (min-width: @screen-md-min) {
+                                                    width: 50%;
+                                                }
 
                                                 .media-wrapper {
                                                     position: relative;
@@ -768,8 +774,12 @@ body {
                                                 display: block;
                                                 float: left;
                                                 
-                                                width: 50%;
+                                                width: 65%;
                                                 height: 100%;
+
+                                                @media (min-width: @screen-md-min) {
+                                                    width: 50%;
+                                                }
 
                                                 box-sizing: border-box;
                                                 padding: 0 15px 0 30px;
@@ -791,7 +801,7 @@ body {
                                                     position: absolute;
                                                     bottom: 0;
 
-                                                    margin: 10px 0 0 0;
+                                                    margin: 10px 0 10px 0;
 
                                                     visibility: hidden;
                                                 }
