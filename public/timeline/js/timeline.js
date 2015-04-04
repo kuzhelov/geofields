@@ -110,6 +110,9 @@ if (typeof VMM == 'undefined') {
 	
 	/* Master Config
 	================================================== */
+
+
+	
 	
 	VMM.master_config = ({
 		
@@ -123,6 +126,8 @@ if (typeof VMM == 'undefined') {
 				height:			0
 			}
 		},
+
+		skinny_max_width: 540, 
 		
 		vp:				"Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo",
 		
@@ -223,6 +228,10 @@ if (typeof VMM == 'undefined') {
 		}
 		
 	}).init();
+
+	var isSkinnyWidth = function(width) {
+		return width <= VMM.master_config.skinny_max_width;
+	}
 	
 	//VMM.createElement(tag, value, cName, attrs, styles);
 	VMM.createElement = function(tag, value, cName, attrs, styles) {
@@ -5285,8 +5294,8 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			config.slider.nav.height = VMM.Lib.height(navigation.prevBtnContainer);
 			
 			// Handle smaller sizes
-			if (VMM.Browser.device == "mobile" || current_width <= 640) {
-				config.slider.content.padding	= 10;
+			if (VMM.Browser.device == "mobile" || isSkinnyWidth(config.width)) {
+				config.slider.content.padding	= 30;
 			} else {
 				config.slider.content.padding	= config.slider.content.padding_default;
 			}
@@ -5532,7 +5541,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				};
 				
 			// Handle smaller sizes
-			if (VMM.Browser.device == "mobile" || current_width < 641) {
+			if (VMM.Browser.device == "mobile" || isSkinnyWidth(current_width)) {
 				is_skinny = true;
 
 			} 
@@ -5547,8 +5556,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			// VMM.Lib.height(".slider-item", config.slider.height);
 			VMM.Lib.css(".slider-item", "height", '100%' );
 			
-			
-			
+			is_skinny = false;
 			if (is_skinny) {
 				
 				mediasize.text_media.width = 	config.slider.content.width - (config.slider.content.padding*2);
@@ -5559,17 +5567,17 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				mediasize.text_media.video = 	VMM.Util.ratio.fit(mediasize.text_media.width, mediasize.text_media.height, 16, 9);
 				mediasize.media.video = 		VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
 				
-				VMM.Lib.css(".slider-item .layout-text-media .text", "width", "100%" );
-				VMM.Lib.css(".slider-item .layout-text-media .text", "display", "block" );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "block" );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", mediasize.media.width );
-				VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", "auto" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text", "width", "100%" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text", "display", "block" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container", "display", "block" );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container", "width", mediasize.media.width );
+				// VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", "auto" );
 				
-				VMM.Lib.css(".slider-item .layout-text-media .media", "float", "none" );
+				// VMM.Lib.css(".slider-item .layout-text-media .media", "float", "none" );
 				VMM.Lib.addClass(".slider-item .content-container", "pad-top");
 				
-				VMM.Lib.css(".slider-item .media blockquote p", "line-height", "18px" );
-				VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
+				// VMM.Lib.css(".slider-item .media blockquote p", "line-height", "18px" );
+				// VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
 				
 				// VMM.Lib.css(".slider-item", "overflow-y", "auto" );
 				
@@ -7535,7 +7543,7 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
 				*/
 			}
 			
-			if (config.width < 641) {
+			if (isSkinnyWidth(config.width)) {
 				VMM.Lib.addClass($timeline, "vco-skinny");
 			} else {
 				VMM.Lib.removeClass($timeline, "vco-skinny");
