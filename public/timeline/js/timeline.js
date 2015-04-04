@@ -5556,16 +5556,15 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 			// VMM.Lib.height(".slider-item", config.slider.height);
 			VMM.Lib.css(".slider-item", "height", '100%' );
 			
-			is_skinny = false;
 			if (is_skinny) {
 				
-				mediasize.text_media.width = 	config.slider.content.width - (config.slider.content.padding*2);
-				mediasize.media.width = 		config.slider.content.width - (config.slider.content.padding*2);
-				mediasize.text_media.height = 	((config.slider.height/100) * 50 ) - 50;
-				mediasize.media.height = 		((config.slider.height/100) * 70 ) - 40;
+				// mediasize.text_media.width = 	config.slider.content.width - (config.slider.content.padding*2);
+				// mediasize.media.width = 		config.slider.content.width - (config.slider.content.padding*2);
+				// mediasize.text_media.height = 	((config.slider.height/100) * 50 ) - 50;
+				// mediasize.media.height = 		((config.slider.height/100) * 70 ) - 40;
 				
-				mediasize.text_media.video = 	VMM.Util.ratio.fit(mediasize.text_media.width, mediasize.text_media.height, 16, 9);
-				mediasize.media.video = 		VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
+				// mediasize.text_media.video = 	VMM.Util.ratio.fit(mediasize.text_media.width, mediasize.text_media.height, 16, 9);
+				// mediasize.media.video = 		VMM.Util.ratio.fit(mediasize.media.width, mediasize.media.height, 16, 9);
 				
 				// VMM.Lib.css(".slider-item .layout-text-media .text", "width", "100%" );
 				// VMM.Lib.css(".slider-item .layout-text-media .text", "display", "block" );
@@ -5574,7 +5573,9 @@ if(typeof VMM != 'undefined' && typeof VMM.Slider == 'undefined') {
 				// VMM.Lib.css(".slider-item .layout-text-media .text .container .start", "width", "auto" );
 				
 				// VMM.Lib.css(".slider-item .layout-text-media .media", "float", "none" );
-				VMM.Lib.addClass(".slider-item .content-container", "pad-top");
+				// VMM.Lib.addClass(".slider-item .content-container", "pad-top");
+
+				VMM.Lib.css(".slider-item", "display", "inline-block" );
 				
 				// VMM.Lib.css(".slider-item .media blockquote p", "line-height", "18px" );
 				// VMM.Lib.css(".slider-item .media blockquote p", "font-size", "16px" );
