@@ -634,6 +634,7 @@
                     .not(overflowedYClass.asClassSelector())
                     .each(function() {
                         $(this).height('inherit');
+                        $(this).removeClass(overflowYHandledClass);
                     });
 
                 // set properties for overflowed containers
