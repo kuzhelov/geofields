@@ -599,36 +599,65 @@ section.pre-footer {
     }
 
     &.modal-event {
-        .event-heading {
-            text-align: center;
 
-            .date {
-                color: #bbb;
-                font-size: 18px;
-                font-family: "Droid Serif", serif;
+        .modal-header {
+            border: none;
+            background: none;
 
-                text-transform: none;
-            }
+            height: 60px;
+            padding-bottom: 0;
 
-            .header {
-                font-family: "Montserrat", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                font-size: 24px;
+            .close-modal {
+                color: #333;
 
-                @media (min-width: @screen-sm) {
-                    font-size: 30px;
+                &:hover, &:focus {
+                    color: #FED136;
                 }
-            }         
+            }
         }
 
-        .modal-body-subheader {
+        .modal-body {
+            padding-top: 0;
 
-            h3 {
-                font-size: 18px;
-                @media (min-width: @screen-sm) {
+            .event-heading {
+                text-align: center;
+
+                .date {
+                    color: #bbb;
+                    font-size: 18px;
+                    font-family: "Droid Serif", serif;
+
+                    text-transform: none;
+                }
+
+                .header {
+                    font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     font-size: 24px;
+
+                    @media (min-width: @screen-sm) {
+                        font-size: 30px;
+                    }
+                }         
+            }
+
+            .modal-body-subheader {
+
+                h3 {
+                    font-family: "Raleway";
+                    font-size: 18px;
+
+                    @media (min-width: @screen-sm) {
+                        font-size: 24px;
+                    }
                 }
             }
+
+            p {
+                font-family: "Raleway", Helvetica, Arial, sans-serif;
+                letter-spacing: 0.4px;
+            }
         }
+        
     }
 }
 
