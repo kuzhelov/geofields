@@ -685,6 +685,9 @@ body {
 
                                             width: 100%;
                                             height: 100%;
+                                            
+                                            @media-width-sm-screen: 35%;
+                                            @media-width-md-screen: 50%;
 
                                             .media {
                                                 position: relative;
@@ -698,12 +701,12 @@ body {
                                                 @media (min-width: @screen-sm-min) {
                                                     display: block;
 
-                                                    width: 35%;
+                                                    width: @media-width-sm-screen;
                                                     height: 100%;
                                                 }
 
                                                 @media (min-width: @screen-md-min) {
-                                                    width: 50%;
+                                                    width: @media-width-md-screen;
                                                 }
 
                                                 .media-wrapper {
@@ -778,7 +781,8 @@ body {
                                                     }
                                                 }
                                             }
-
+                                            
+                                            @text-left-offset-sm-screen: 30px;
                                             .text {
                                                 position: relative;
                                                 display: block;
@@ -793,14 +797,14 @@ body {
                                                 text-align: center;
 
                                                 @media (min-width: @screen-sm-min) {
-                                                    width: 65%;
+                                                    width: (100% - @media-width-sm-screen);
 
                                                     text-align: left;
-                                                    padding-left: 30px;
+                                                    padding-left: @text-left-offset-sm-screen;
                                                 }
 
                                                 @media (min-width: @screen-md-min) {
-                                                    width: 50%;
+                                                    width: (100% - @media-width-md-screen);
                                                 }
 
                                                 .container {
@@ -832,7 +836,7 @@ body {
 
                                                     left: 50%;
                                                     @media (min-width: @screen-sm-min) {
-                                                        left: 30px;
+                                                        left: @text-left-offset-sm-screen;
                                                     }
 
                                                     .read-more-inner {
