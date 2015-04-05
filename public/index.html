@@ -558,6 +558,43 @@
                 </div>
             </div>
         </div>
+        
+        <div id="event-conference" class="modal modal-event fade" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--div class="modal-header">
+                        <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h2 class="modal-title">{{ service.name }}</h2>      
+                    </div-->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="body-elements-root col-xs-10 col-xs-offset-1">
+                                <!--p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p-->
+                                <div class="event-heading">
+                                    <h3 class="date">April 15, 2014</h3>
+                                    <h2 class="header">Geofields has performed on Petroleum Engineering Conference</h2>
+                                </div>
+
+                                <img class="img-responsive img-centered" 
+                                    src="https://farm9.staticflickr.com/8199/8211459703_5acf8d39ae.jpg" 
+                                    alt="">
+
+                                <p class="drop-cap fadeInDown animated">Duis venenatis tellus a orci hendrerit egestas. Sed iaculis nibh non ultrices scelerisque. Vivamus condimentum, nulla eget pulvinar bibendum, nisl elit pellentesque turpis, et blandit libero tellus in urna. Vivamus commodo massa non sem gravida aliquam. Cras ex erat, finibus et leo in, tincidunt luctus eros. Vivamus ac egestas turpis. Quisque vitae neque vitae risus blandit euismod quis quis arcu. Aliquam et ipsum non magna molestie finibus nec sit amet metus.</p>
+
+                                <div class="modal-body-subheader">
+                                    <h3>Brief Content</h3>
+                                </div>
+                                <p class="drop-cap fadeInDown animated">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu ex vehicula, sollicitudin nunc sed, fermentum risus. Pellentesque ipsum odio, finibus nec dignissim a, imperdiet id eros. Cras tincidunt mi vitae dictum luctus. Praesent ut sem neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vitae mi condimentum, viverra velit a, bibendum elit. Vivamus porttitor nisl dolor, non sollicitudin orci efficitur sed. Donec gravida ante vitae purus vulputate, a convallis nibh scelerisque. Quisque quis pellentesque lorem. Maecenas ac venenatis lectus, ultrices mattis eros. Sed vestibulum erat et arcu interdum aliquet. Sed tincidunt vulputate pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce sed congue dolor
+                                </p>
+
+                                <button type="button" class="bottom-close btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
@@ -605,7 +642,7 @@
                 var readMoreDiv = $(document.createElement('div'))
                     .addClass('read-more ')
                     .attr('data-toggle', 'modal') // just for testing
-                    .attr('data-target', '#service-coal')
+                    .attr('data-target', '#event-conference')
                     .append(innerDiv);
                     
                     // .append($(document.createElement('a')).html('read more'));

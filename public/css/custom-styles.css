@@ -1283,6 +1283,18 @@ section.pre-footer {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.modal.modal-event .event-heading {
+  text-align: center;
+}
+.modal.modal-event .event-heading .date {
+  color: #bbb;
+  font-size: 18px;
+  font-family: "Droid Serif", serif;
+  text-transform: none;
+}
+.modal.modal-event .event-heading .header {
+  font-family: "Raleway", sans-serif;
+}
 body {
   position: relative;
 }
