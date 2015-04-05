@@ -16,14 +16,18 @@ body {
 
 @read-more-button-padding: 10px 26px;
 .read-more {
+    .btn,
     &.btn {
         border-radius: 0;
     }
-
+    
+    .btn-sm,
     &.btn-sm {
         font-size: 0.73em;
         padding: @read-more-button-padding;
     }
+
+    .btn-outline-inverse
     &.btn-outline-inverse {
         background-color: transparent;
     }
@@ -823,19 +827,28 @@ body {
 
                                                     visibility: hidden;
 
-                                                    margin: 10px 0 10px -50px;
+                                                    margin-top: 10px;
+                                                    margin-bottom: 10px;
 
+                                                    left: 50%;
                                                     @media (min-width: @screen-sm-min) {
-                                                        margin-left: 0;
+                                                        left: 30px;
                                                     }
 
-                                                    
+                                                    .read-more-inner {
+                                                        position: relative;
+
+                                                        left: -50%;
+                                                        @media (min-width: @screen-sm-min) {
+                                                            left: 0;
+                                                        }
+                                                    }
                                                 }
 
                                                 .container.has-overflow-y + .read-more {
                                                         visibility: visible;
 
-                                                        &.btn-outline-inverse {
+                                                        .read-more-inner.btn-outline-inverse {
                                                             color: #666;
                                                             border-color: #666;
 

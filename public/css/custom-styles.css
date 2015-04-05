@@ -735,14 +735,16 @@ html {
 body {
   height: 100%;
 }
+.read-more .btn,
 .read-more.btn {
   border-radius: 0;
 }
+.read-more .btn-sm,
 .read-more.btn-sm {
   font-size: 0.73em;
   padding: 10px 26px;
 }
-.read-more.btn-outline-inverse {
+.btn-outline-inverse .read-more.btn-outline-inverse {
   background-color: transparent;
 }
 /* this should prevent navbar blinking on Chrome */
@@ -1464,21 +1466,32 @@ body {
   position: absolute;
   bottom: 0;
   visibility: hidden;
-  margin: 10px 0 10px -50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  left: 50%;
 }
 @media (min-width: 768px) {
   #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more {
-    margin-left: 0;
+    left: 30px;
+  }
+}
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more .read-more-inner {
+  position: relative;
+  left: -50%;
+}
+@media (min-width: 768px) {
+  #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .read-more .read-more-inner {
+    left: 0;
   }
 }
 #timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more {
   visibility: visible;
 }
-#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more.btn-outline-inverse {
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more .read-more-inner.btn-outline-inverse {
   color: #666;
   border-color: #666;
 }
-#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more.btn-outline-inverse:hover {
+#timeline-embed #storyjs-timeline .vco-container .vco-feature .vco-slider .slider-container-mask .slider-container .slider-item-container .slider-item .content .content-container .text .container.has-overflow-y + .read-more .read-more-inner.btn-outline-inverse:hover {
   color: #fff;
   background-color: #666;
 }

@@ -598,16 +598,19 @@
             };
 
             var createReadMoreButton = function(text) {
-                var element = document.createElement('div');
-                $(element)
-                    .addClass('read-more btn btn-sm btn-outline-inverse')
-                    // .addClass('read-more')
+                var innerDiv = $(document.createElement('div'))
+                    .addClass('read-more-inner btn btn-sm btn-outline-inverse')
+                    .html(text);
+
+                var readMoreDiv = $(document.createElement('div'))
+                    .addClass('read-more ')
                     .attr('data-toggle', 'modal') // just for testing
                     .attr('data-target', '#service-coal')
-                    .html(text);
-                     // .append($(document.createElement('a')).html('read more'));
+                    .append(innerDiv);
+                    
+                    // .append($(document.createElement('a')).html('read more'));
 
-                return element;
+                return readMoreDiv;
             };
 
             HTMLElement.prototype.hasChild = function (selector) {
