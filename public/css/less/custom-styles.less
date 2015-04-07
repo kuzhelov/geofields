@@ -607,8 +607,35 @@ section.pre-footer {
             height: 60px;
             padding-bottom: 0;
 
+            .date {
+                padding-top: 16px;
+                padding-bottom: 16px;
+
+                line-height: 1;
+
+                color: #aaa;
+                border-bottom: 1px solid (#111 + #aaa);
+
+                font-size: 16px;
+                font-family: "Droid Serif", serif;
+
+                letter-spacing: 1px; 
+                @media (min-width: @screen-sm-min) {
+                    letter-spacing: 2px;
+                }
+
+                @media (min-width: @screen-md-min) {
+                    letter-spacing: 3px;
+                }
+            }
+
             .close-modal {
+                position: absolute;
+                top: 0;
+                right: 0;
+
                 color: #333;
+                padding: 16px;
 
                 &:hover, &:focus {
                     color: #FED136;
@@ -622,19 +649,18 @@ section.pre-footer {
             .event-heading {
                 text-align: center;
 
-                .date {
-                    color: #bbb;
-                    font-size: 18px;
-                    font-family: "Droid Serif", serif;
-
-                    text-transform: none;
-                }
-
                 .header {
+                    line-height: 1.2;
+
                     font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     font-size: 24px;
 
-                    @media (min-width: @screen-sm) {
+                    word-spacing: 4px;
+
+                    @media (min-width: @screen-sm-min) {
+                        letter-spacing: -0.4px;
+                        word-spacing: 7px;
+
                         font-size: 30px;
                     }
                 }         
@@ -652,9 +678,14 @@ section.pre-footer {
                 }
             }
 
+
             p {
                 font-family: "Raleway", Helvetica, Arial, sans-serif;
                 letter-spacing: 0.4px;
+            }
+
+            .text-muted {
+                color: #555;
             }
         }
         

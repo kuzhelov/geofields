@@ -1289,8 +1289,32 @@ section.pre-footer {
   height: 60px;
   padding-bottom: 0;
 }
+.modal.modal-event .modal-header .date {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 1;
+  color: #aaa;
+  border-bottom: 1px solid #bbbbbb;
+  font-size: 16px;
+  font-family: "Droid Serif", serif;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  .modal.modal-event .modal-header .date {
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 992px) {
+  .modal.modal-event .modal-header .date {
+    letter-spacing: 3px;
+  }
+}
 .modal.modal-event .modal-header .close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: #333;
+  padding: 16px;
 }
 .modal.modal-event .modal-header .close-modal:hover,
 .modal.modal-event .modal-header .close-modal:focus {
@@ -1302,18 +1326,16 @@ section.pre-footer {
 .modal.modal-event .modal-body .event-heading {
   text-align: center;
 }
-.modal.modal-event .modal-body .event-heading .date {
-  color: #bbb;
-  font-size: 18px;
-  font-family: "Droid Serif", serif;
-  text-transform: none;
-}
 .modal.modal-event .modal-body .event-heading .header {
+  line-height: 1.2;
   font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 24px;
+  word-spacing: 4px;
 }
 @media (min-width: 768px) {
   .modal.modal-event .modal-body .event-heading .header {
+    letter-spacing: -0.4px;
+    word-spacing: 7px;
     font-size: 30px;
   }
 }
@@ -1329,6 +1351,9 @@ section.pre-footer {
 .modal.modal-event .modal-body p {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   letter-spacing: 0.4px;
+}
+.modal.modal-event .modal-body .text-muted {
+  color: #555;
 }
 body {
   position: relative;
