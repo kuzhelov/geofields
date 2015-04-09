@@ -387,7 +387,7 @@ function createStoryJS(c, src) {
 		if (storyjs_e_config.debug) {
 			storyjs_e_config.js += ".js?" + js_version
 		} else {
-			storyjs_e_config.js += "-min.js?" + js_version
+			storyjs_e_config.js += ".min.js?" + js_version
 		}
 		storyjs_e_config.id = "storyjs-" + storyjs_e_config.type
 	}
