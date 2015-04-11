@@ -735,6 +735,9 @@ html {
 body {
   height: 100%;
 }
+button {
+  outline-style: none;
+}
 .read-more .btn,
 .read-more.btn {
   border-radius: 0;
