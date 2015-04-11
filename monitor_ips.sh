@@ -7,5 +7,5 @@ set -e
 while true
 do
 	( (cat ./ips.temp; ./list_ips.sh) | cat | sort | uniq ) > ./ips.temp
-	sleep 10 
+	sleep 600 
 done
