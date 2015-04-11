@@ -2,10 +2,9 @@
 
 set -e
 
-( ./list_ips.sh ) >> ./ips.temp 
-
 while true
 do
-	( (cat ./ips.temp; ./list_ips.sh) | cat | sort | uniq ) > ./ips.temp
-	sleep 600 
+	( (cat ./inbound_ips; ./list_ips.sh) | cat | sort | uniq ) > ./inbound_ips.temp 2>/dev/null
+	mv ./inbound_ips.temp ./inbound_ips
+	sleep 30 
 done
